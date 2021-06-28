@@ -9,8 +9,7 @@ export default function HomePage(props: IHomeProps) {
   return (
     <>
       <Head>
-        <title>Lucas Ribeiro - Developer</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Lucas Ribeiro - Frontend Developer</title>
       </Head>
       <FullBanner />
       <About />

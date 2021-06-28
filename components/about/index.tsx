@@ -24,12 +24,11 @@ export function About(props: IAboutProps) {
                 <Mark type="secondary">profissão</Mark>. No ensino médio estudei em escola de tecnologia e informação
                 durante um período. Em 2013 iniciei na graduação de Desenvolvimento de Sistemas. Meu{" "}
                 <Mark type="secondary">trabalho científico</Mark>
-                para conclusão do curso foi sobre Gerador de Artefatos Web, você pode <a href="/#">ver mais</a> sobre o
-                trabalho ou conferir os artigos que fiz <a href="/#">mais pra baixo</a>. <br />
+                para conclusão do curso foi sobre Gerador de Artefatos Web. <br />
                 Inicei como desenvolvedor na linguagem <Mark type="secondary">Java</Mark>, implementando um sistema web
                 de ERP para agropecuária. Fiz estágio na faculdade como desenvolvedor{" "}
                 <Mark type="secondary">front-end</Mark> e desde então construo carreira na área, atuando com{" "}
-                <Mark type="secondary">e-commerce</Mark>, área financeira, institucional e desenvolvimento de
+                <Mark type="secondary">e-commerce</Mark>, área financeira e desenvolvimento de
                 plataformas.
               </p>
               <div>

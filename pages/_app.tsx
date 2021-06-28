@@ -21,10 +21,11 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     background-image: url("/images/brain.jpg");
+    background-position: 55% -18%;
     background-repeat: no-repeat;
     background-color: #252331;
     margin: 0;
-    @media (max-width: 992px) {
+    @media (min-width: 992px) {
       background-position: -245px -215px;
     }
   }
@@ -51,6 +52,27 @@ function MyApp({ Component, pageProps }) {
           rel="stylesheet"
         />
         <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet" />
+        <link rel="icon" sizes="16x16" href="/fav.png"></link>
+
+        <meta name="theme-color" content="#4514a7" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="description"
+          content="Lucas Ribeiro - JavaScript developer, specialist in e-commerce and frontend development, tap if you looking for freelancer development."
+        />
+        <meta
+          name="keywords"
+          content="JavaScript, Developer, Enginer, Frontend, Dev, FullStack, React, Angular, TypeScript, Java, E-commerce"
+        />
+        <meta name="author" content="luucasnck@gmail.com" />
+        <meta property="og:url" content="https://lucasnck.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Lucasnck - Frontend Developer" />
+        <meta
+          property="og:description"
+          content="Lucas Ribeiro - JavaScript developer, specialist in e-commerce and frontend development, tap if you looking for freelancer development."
+        />
+        <meta property="og:image" content="/images/me.jpg" />
       </Head>
 
       <ThemeProvider theme={theme}>

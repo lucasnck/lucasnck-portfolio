@@ -6,6 +6,7 @@ import { Flex } from "../flex";
 import { FormItem } from "../form-item";
 import { ErrorMessage } from "../form-item/style";
 import { Input } from "../input";
+import { Mark } from "../mark";
 import { Modal, useModal } from "../modal";
 import { Text } from "../text";
 import { TextArea } from "../textarea";
@@ -39,15 +40,17 @@ export function Newsletter(props: INewsletterProps) {
         <NewsletterSkewed />
         <Container>
           <Flex column rowMd>
-            <div>
+            <Flex column>
               <Text as="h2" type="primary">
-                O que acha de mantermos contato? — Inscreva-se aqui.
+                Let's make networking? - Send me a message below.
               </Text>
               <Text as="p" type="light">
-                Podemos conversar sobre tecnologia, propostas de projetos ou trabalhos na área. E se só estiver querendo
-                fazer networking seja bem-vindo.
+                We can talk about technology, job proposals, freelance jobs, projects development, or just networking.
+                I'm also <Mark type="secondary">looking</Mark> for developers to{" "}
+                <Mark type="secondary">work with me</Mark> in my current job. But I can also refer you to other jobs if
+                you like.
               </Text>
-            </div>
+            </Flex>
             <NewsletterForm id="newsletter-form" onSubmit={onSubmit}>
               <Flex column>
                 <FormItem id="nickname">

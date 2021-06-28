@@ -2,9 +2,12 @@ import styled from "styled-components";
 
 export const FullBannerStyle = styled.div`
   width: 100%;
-  min-height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: start;
+  @media (min-width: ${(props) => props.theme.screen.md}) {
+    min-height: 100vh;
+    align-items: center;
+  }
   padding-top: 100px;
   margin-bottom: 5rem;
 `;

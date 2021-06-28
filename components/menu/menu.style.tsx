@@ -6,7 +6,7 @@ export const MenuStyle = styled.div`
   top: 0;
   right: -300px;
   width: 300px;
-  height: 100vh;
+  height: 100%;
   margin: 0;
   padding: 1rem 0;
   background-color: #6e25c8;
@@ -71,6 +71,10 @@ export const SocialMedia = styled.div`
       width: 25px;
       height: 25px;
       font-size: 12px;
+      color: #462a68;
+      svg {
+        width: 30px;
+      }
       &:hover {
         color: #fff;
       }

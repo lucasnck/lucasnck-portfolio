@@ -2,6 +2,8 @@ import styled from "styled-components";
 import is, { match } from "styled-is";
 
 export const LogoStyle = styled.div`
+  display: flex;
+  align-items: center;
   ${is("show")`
     text-align: center;
   `}
