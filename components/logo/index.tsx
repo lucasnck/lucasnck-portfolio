@@ -17,7 +17,7 @@ export default function Logo(props: ILogoProps) {
           height="38"
           transform="matrix(1 0 0.148327 0.988938 7.85331 0.0109393)"
           stroke="#27FCFA"
-          stroke-width="2"
+          strokeWidth="2"
         />
         <rect
           x="1.14004"
@@ -26,7 +26,7 @@ export default function Logo(props: ILogoProps) {
           height="38"
           transform="matrix(1 0 0.140037 0.990146 -0.138657 8.00976)"
           stroke="#6E25C8"
-          stroke-width="2"
+          strokeWidth="2"
         />
       </svg>
       <span style={{ marginLeft: "1rem" }}>Lucasnck</span>

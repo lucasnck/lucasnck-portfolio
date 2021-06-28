@@ -28,8 +28,7 @@ export function About(props: IAboutProps) {
                 Inicei como desenvolvedor na linguagem <Mark type="secondary">Java</Mark>, implementando um sistema web
                 de ERP para agropecuária. Fiz estágio na faculdade como desenvolvedor{" "}
                 <Mark type="secondary">front-end</Mark> e desde então construo carreira na área, atuando com{" "}
-                <Mark type="secondary">e-commerce</Mark>, área financeira e desenvolvimento de
-                plataformas.
+                <Mark type="secondary">e-commerce</Mark>, área financeira e desenvolvimento de plataformas.
               </p>
               <div>
                 <Button type="primary" outlined skewed>
