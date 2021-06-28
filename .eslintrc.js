@@ -36,6 +36,7 @@ module.exports = {
     "no-restricted-globals": "off",
     "react/require-default-props": "off",
     "react/no-unescaped-entities": "off",
+    "react/no-danger": "off",
     "prettier/prettier": [
       "error",
       {

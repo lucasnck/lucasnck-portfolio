@@ -82,7 +82,7 @@ function MyApp({ Component, pageProps }) {
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-KTWD6LF');`,
           }}
-        ></script>
+        />
       </Head>
 
       <noscript
@@ -90,7 +90,7 @@ function MyApp({ Component, pageProps }) {
           __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KTWD6LF"
             height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
         }}
-      ></noscript>
+      />
       <ThemeProvider theme={theme}>
         <Theme>
           <GlobalStyle />
