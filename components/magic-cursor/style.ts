@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
 export const MagicMouseStyle = styled.div`
+  display: none;
+  @media (min-width: ${(props) => props.theme.screen.md}) {
+    display: block;
+  }
+
   .main-cursor,
   .secondary-cursor {
     z-index: 10000;

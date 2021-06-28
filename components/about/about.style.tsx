@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const AboutStyle = styled.div`
   padding: 0 1rem;
   margin-bottom: 5rem;
+  box-sizing: border-box;
   @media (min-width: ${(props) => props.theme.screen.sm}) {
     padding: 0;
   }
@@ -10,7 +11,7 @@ export const AboutStyle = styled.div`
     width: 100%;
     margin: 0 auto;
     border: 2px solid #4514a7;
-    transform: skew(4deg);
+    transform: skew(2deg);
     margin: 0 -15px 0 -15px;
     @media (min-width: ${(props) => props.theme.screen.sm}) {
       transform: skew(${(props) => props.theme.skew.sm});
@@ -33,8 +34,9 @@ export const AboutStyle = styled.div`
   }
 
   .message {
-    transform: skew(-4deg);
+    transform: skew(-2deg);
     padding: 1rem 2.5rem 2rem 2.5rem;
+    box-sizing: border-box;
     color: #ffffff;
     @media (min-width: ${(props) => props.theme.screen.sm}) {
       padding: 1rem 3rem 3rem 4rem;
