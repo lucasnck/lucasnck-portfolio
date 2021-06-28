@@ -5,6 +5,7 @@ export const Container = styled.div`
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  box-sizing: border-box;
   @media (min-width: ${(props) => props.theme.screen.sm}) {
     max-width: ${(props) => props.theme.container.sm};
   }

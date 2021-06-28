@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const AboutStyle = styled.div`
-  padding: 0 3rem;
+  padding: 0 1rem;
   margin-bottom: 5rem;
   @media (min-width: ${(props) => props.theme.screen.sm}) {
     padding: 0;

@@ -5,7 +5,7 @@ export const FullBannerStyle = styled.div`
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding-top: 4rem;
+  padding-top: 100px;
   margin-bottom: 5rem;
 `;
 
