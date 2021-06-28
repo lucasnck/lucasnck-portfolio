@@ -42,7 +42,7 @@ export function Newsletter(props: INewsletterProps) {
           <Flex column rowMd>
             <Flex column>
               <Text as="h2" type="primary">
-                Let's make networking? - Send me a message below.
+                Let's make networking? - Send me a message.
               </Text>
               <Text as="p" type="light">
                 We can talk about technology, job proposals, freelance jobs, projects development, or just networking.

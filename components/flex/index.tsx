@@ -16,6 +16,12 @@ export const Flex = styled.div<IFlex>`
   width: 100%;
   height: 100%;
   position: relative;
+
+  @media (min-width: ${(props) => props.theme.screen.md}) {
+    ${is("startXMd")`
+    justify-content: start;
+  `}
+  }
   ${is("centeredX")`
     justify-content: center;
   `}
@@ -46,4 +52,12 @@ export const Flex = styled.div<IFlex>`
     justify-content: flex-end;
     align-items: end;
   `}
+
+  
+  @media (min-width: ${(props) => props.theme.screen.md}) {
+    ${is("endXMd")`
+      justify-content: flex-end;
+      align-items: end;
+    `}
+  }
 `;

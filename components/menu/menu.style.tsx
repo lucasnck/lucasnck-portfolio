@@ -73,7 +73,7 @@ export const SocialMedia = styled.div`
       font-size: 12px;
       color: #462a68;
       svg {
-        width: 30px;
+        width: 50px;
       }
       &:hover {
         color: #fff;
