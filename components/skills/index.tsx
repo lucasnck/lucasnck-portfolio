@@ -6,6 +6,7 @@ import Angular from "../icons/angular";
 import GTM from "../icons/gtm";
 import Java from "../icons/java";
 import JavaScript from "../icons/javascript";
+import Optimize from "../icons/optimize";
 import { Section } from "../section";
 import { Slider } from "../slider";
 import { Text } from "../text";
@@ -55,6 +56,7 @@ const settings = {
 };
 
 export function Skills(props: ISkillsProps) {
+
   return (
     <Section id="skills">
       <SkillStyle>
@@ -179,6 +181,19 @@ export function Skills(props: ISkillsProps) {
                 </div>
               </Item>
 
+              <Item>
+                <div>
+                  <h3>
+                    <Icon>
+                      <Optimize />
+                    </Icon>
+                  </h3>
+                  <Text as="span" type="text-light">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </Text>
+                </div>
+              </Item>
+
               {/* <Item>
                 <div>
                   <h3>
@@ -248,4 +263,7 @@ export function Skills(props: ISkillsProps) {
       </SkillStyle>
     </Section>
   );
+}
+function useCallback(arg0: (id: any) => void, arg1: undefined[]) {
+  throw new Error("Function not implemented.");
 }
