@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Flex } from "../../../../components";
 
 export const FullBannerStyle = styled.div`
   width: 100%;

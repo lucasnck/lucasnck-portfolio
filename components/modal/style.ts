@@ -29,13 +29,7 @@ export const ModalStyle = styled.div`
     background-color: #000;
     z-index: 9;
     border: 2px solid #4514a7;
-    transform: translateX(-50%) translateY(-50%) skew(4deg);
-    @media (min-width: ${(props) => props.theme.screen.sm}) {
-      transform: skew(${(props) => props.theme.skew.sm}) translateX(-50%) translateY(-50%);
-    }
-    @media (min-width: ${(props) => props.theme.screen.md}) {
-      transform: skew(${(props) => props.theme.skew.md}) translateX(-50%) translateY(-50%);
-    }
+    transform: translateX(-50%) translateY(-50%);
     &:before {
       content: "";
       width: 100%;
@@ -45,6 +39,7 @@ export const ModalStyle = styled.div`
       left: 10px;
       background-color: #101012;
       border: 2px solid #27fffd;
+      z-index: 4;
     }
 
     opacity: 0;
@@ -60,12 +55,7 @@ export const ModalStyle = styled.div`
 `;
 
 export const ModalContent = styled.div`
-  padding: 1rem 3rem 2rem 5rem;
-  transform: skew(-4deg);
-  @media (min-width: ${(props) => props.theme.screen.sm}) {
-    transform: skew(-${(props) => props.theme.skew.sm});
-  }
-  @media (min-width: ${(props) => props.theme.screen.md}) {
-    transform: skew(-${(props) => props.theme.skew.md});
-  }
+  padding: 0 1rem 3rem 2rem;
+  z-index: 5;
+  position: relative;
 `;

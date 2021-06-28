@@ -8,7 +8,9 @@ export const Slider = styled(SlickSlider)`
   .slick-slide {
     height: inherit !important;
   }
-  .slick-slide > div { height: 100%; }
+  .slick-slide > div {
+    height: 100%;
+  }
   .slick-dots {
     bottom: -3rem;
     li {

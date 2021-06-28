@@ -109,7 +109,7 @@ export const SkillStyle = styled.div`
 `;
 
 export const Item = styled.div`
-  color: ${(props) => props.theme.colors["light"]};
+  color: ${(props) => props.theme.colors.light};
 `;
 
 export const Icon = styled.div`

@@ -1,28 +1,33 @@
-import * as React from "react";
-import { Button, Container, Flex, Text, Input, TextArea, FormItem, Modal, useModal } from "../../../../components";
-import { NewsletterForm, NewsletterSkewed, NewsletterStyle } from "./style";
 import { useForm, ValidationError } from "@formspree/react";
-import { ErrorMessage } from "../../../../components/form-item/style";
-import { useState } from "react";
+import React, { useState } from "react";
+import { Button } from "../button";
+import { Container } from "../container";
+import { Flex } from "../flex";
+import { FormItem } from "../form-item";
+import { ErrorMessage } from "../form-item/style";
+import { Input } from "../input";
+import { Modal, useModal } from "../modal";
+import { Text } from "../text";
+import { TextArea } from "../textarea";
+import { NewsletterForm, NewsletterSkewed, NewsletterStyle } from "./style";
 
 export interface INewsletterProps {}
 
-export default function Newsletter(props: INewsletterProps) {
+export function Newsletter(props: INewsletterProps) {
   const modal = useModal();
   const [state, handleSubmit] = useForm("xzbyvdrq");
   const [loading, setLoading] = useState(false);
 
-  if (state.success) {
-    (document.getElementById("newsletter-form") as any).reset();
+  if (state.succeeded) {
+    (document.getElementById("newsletter-form") as HTMLFormElement).reset();
     modal.setShow(true);
   }
-  
+
   const onSubmit = async (event) => {
     try {
       setLoading(true);
       event.preventDefault();
       await handleSubmit(event);
-    } catch (error) {
     } finally {
       setLoading(false);
     }
@@ -69,7 +74,7 @@ export default function Newsletter(props: INewsletterProps) {
                 <Flex centeredX>
                   <div>
                     {loading ? (
-                      <Button type="secondary" outlined skewed disabled={true}>
+                      <Button type="secondary" outlined skewed disabled>
                         <span>sending your .json</span>
                       </Button>
                     ) : (

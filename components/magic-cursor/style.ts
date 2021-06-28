@@ -16,7 +16,7 @@ export const MagicMouseStyle = styled.div`
     .main-cursor-background {
       width: 10px;
       height: 10px;
-      background: ${(props) => props.theme.colors["dark"]};
+      background: ${(props) => props.theme.colors.dark};
       border-radius: 50%;
     }
   }

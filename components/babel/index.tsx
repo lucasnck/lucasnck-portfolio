@@ -6,7 +6,7 @@ export const Babel = styled.span`
   line-height: 25px;
   padding: 0 0.5rem;
   font-size: 12px;
-  color: ${(props) => props.theme.colors["light"]};
+  color: ${(props) => props.theme.colors.light};
   background-color: ${(props) => props.theme.colors[props.type]};
   ${is("outlined")`
     background-color: transparent;

@@ -1,16 +1,14 @@
-import * as React from "react";
-import Menu from "../menu";
-import { useCallback, useEffect, useState } from "react";
-import Header from "../header";
-import { Footer } from "../footer";
-import { Content, WrapperContainer } from "./style";
-import { MenuOverlay } from "../menu/menu.style";
 import { useRouter } from "next/router";
-import CustomCursorManager, { CustomCursor } from "../magic-cursor";
+import * as React from "react";
+import { useCallback, useEffect, useState } from "react";
+import { Footer } from "../footer";
+import { Header } from "../header";
+import { CustomCursor, CustomCursorManager } from "../magic-cursor";
+import Menu from "../menu";
+import { MenuOverlay } from "../menu/menu.style";
+import { Content, WrapperContainer } from "./style";
 
-export interface IWrapperProps {}
-
-export const Wrapper: React.FC<IWrapperProps> = (props) => {
+export const Wrapper: React.FC = ({ children }) => {
   const router = useRouter();
 
   const [showMenu, setShowMenu] = useState(false);
@@ -35,7 +33,7 @@ export const Wrapper: React.FC<IWrapperProps> = (props) => {
           <Content show={showMenu}>
             <MenuOverlay show={showMenu} onClick={toggleMenu} />
             <Header showMenu={showMenu} toggleMenu={toggleMenu} />
-            {props.children}
+            {children}
             <Footer />
           </Content>
         </WrapperContainer>

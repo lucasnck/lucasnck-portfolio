@@ -1,20 +1,15 @@
 import * as React from "react";
-import { Container, Slider, Text } from "../../../../components";
+import { Container } from "../container";
+import { ReactJS, TypeScript } from "../icons";
+import Analytics from "../icons/analytics";
+import Angular from "../icons/angular";
+import GTM from "../icons/gtm";
+import Java from "../icons/java";
+import JavaScript from "../icons/javascript";
+import { Section } from "../section";
+import { Slider } from "../slider";
+import { Text } from "../text";
 import { Icon, Item, SkillStyle } from "./style";
-import ReactIcon from "../../../../public/brands/react.svg";
-import TypescriptIcon from "../../../../public/brands/typescript.svg";
-import JavascriptIcon from "../../../../public/brands/javascript.svg";
-import CsharpIcon from "../../../../public/brands/csharp.svg";
-import AngularIcon from "../../../../public/brands/angular.svg";
-import JavaIcon from "../../../../public/brands/java.svg";
-import GTMIcon from "../../../../public/brands/gtm.svg";
-import AnalyticsIcon from "../../../../public/brands/analytics.svg";
-import OptimizeIcon from "../../../../public/brands/optimize.svg";
-import GraphqlIcon from "../../../../public/brands/graphql.svg";
-import CSSIcon from "../../../../public/brands/css.svg";
-import SASSIcon from "../../../../public/brands/sass.svg";
-import VtexIcon from "../../../../public/brands/vtex.svg";
-import { Section } from "../../../../components/section";
 
 export interface ISkillsProps {}
 
@@ -59,15 +54,15 @@ const settings = {
   ],
 };
 
-export default function Skills(props: ISkillsProps) {
+export function Skills(props: ISkillsProps) {
   return (
     <Section id="skills">
       <SkillStyle>
-        <div className="skewed top"></div>
+        <div className="skewed top" />
         <Container>
           <div className="skill-container-full">
-            <div className="skewed detail bottom"></div>
-            <div className="skewed detail top"></div>
+            <div className="skewed detail bottom" />
+            <div className="skewed detail top" />
           </div>
           <div className="internal-container">
             <div className="header">
@@ -84,7 +79,7 @@ export default function Skills(props: ISkillsProps) {
                 <div>
                   <h3>
                     <Icon>
-                      <ReactIcon />
+                      <ReactJS />
                     </Icon>
                   </h3>
                   <Text as="span" type="text-light">
@@ -97,7 +92,7 @@ export default function Skills(props: ISkillsProps) {
                 <div>
                   <h3>
                     <Icon>
-                      <TypescriptIcon />
+                      <TypeScript />
                     </Icon>
                   </h3>
                   <Text as="span" type="text-light">
@@ -110,7 +105,7 @@ export default function Skills(props: ISkillsProps) {
                 <div>
                   <h3>
                     <Icon>
-                      <JavascriptIcon />
+                      <JavaScript />
                     </Icon>
                   </h3>
                   <Text as="span" type="text-light">
@@ -119,7 +114,7 @@ export default function Skills(props: ISkillsProps) {
                 </div>
               </Item>
 
-              <Item>
+              {/* <Item>
                 <div>
                   <h3>
                     <Icon>
@@ -130,13 +125,13 @@ export default function Skills(props: ISkillsProps) {
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                   </Text>
                 </div>
-              </Item>
+              </Item> */}
 
               <Item>
                 <div>
                   <h3>
                     <Icon>
-                      <AngularIcon />
+                      <Angular />
                     </Icon>
                   </h3>
                   <Text as="span" type="text-light">
@@ -149,7 +144,7 @@ export default function Skills(props: ISkillsProps) {
                 <div>
                   <h3>
                     <Icon>
-                      <JavaIcon />
+                      <Java />
                     </Icon>
                   </h3>
                   <Text as="span" type="text-light">
@@ -162,7 +157,7 @@ export default function Skills(props: ISkillsProps) {
                 <div>
                   <h3>
                     <Icon>
-                      <GTMIcon />
+                      <GTM />
                     </Icon>
                   </h3>
                   <Text as="span" type="text-light">
@@ -175,7 +170,7 @@ export default function Skills(props: ISkillsProps) {
                 <div>
                   <h3>
                     <Icon>
-                      <AnalyticsIcon />
+                      <Analytics />
                     </Icon>
                   </h3>
                   <Text as="span" type="text-light">
@@ -184,7 +179,7 @@ export default function Skills(props: ISkillsProps) {
                 </div>
               </Item>
 
-              <Item>
+              {/* <Item>
                 <div>
                   <h3>
                     <Icon>
@@ -221,7 +216,7 @@ export default function Skills(props: ISkillsProps) {
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                   </Text>
                 </div>
-              </Item>
+              </Item> */}
               {/* <Item>
               <div>
                 <h3>
@@ -234,7 +229,7 @@ export default function Skills(props: ISkillsProps) {
                 </Text>
               </div>
             </Item> */}
-              <Item>
+              {/* <Item>
                 <div>
                   <h3>
                     <Icon>
@@ -245,11 +240,11 @@ export default function Skills(props: ISkillsProps) {
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                   </Text>
                 </div>
-              </Item>
+              </Item> */}
             </Slider>
           </div>
         </Container>
-        <div className="skewed bottom"></div>
+        <div className="skewed bottom" />
       </SkillStyle>
     </Section>
   );

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Flex } from "..";
+import { Flex } from "../flex";
 
 export const HeaderStyle = styled(Flex)`
   height: 80px;
@@ -11,5 +11,4 @@ export const HeaderStyle = styled(Flex)`
   background-color: rgb(0 0 0 / 20%);
 `;
 
-export const HeaderContainerStyle = styled.div`
-`;
+export const HeaderContainerStyle = styled.div``;

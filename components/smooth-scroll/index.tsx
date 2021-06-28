@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, useCallback } from "react";
 import { SmoothScrollStyle } from "./style";
 
 interface IWindowSize {
@@ -33,37 +33,28 @@ export function useWindowSize() {
 }
 
 export const SmoothScroll = ({ children }) => {
-  // 1.
   const windowSize = useWindowSize();
 
-  //2.
   const scrollingContainerRef = useRef<HTMLHeadingElement>();
 
-  // 3.
-  const data = {
-    ease: 0.1,
-    current: 0,
-    previous: 0,
-    rounded: 0,
+  const setBodyHeight = () => {
+    document.body.style.height = `${scrollingContainerRef.current.getBoundingClientRect().height}px`;
   };
 
-  // 4.
   useEffect(() => {
     if (windowSize && windowSize.height) {
       setBodyHeight();
     }
   }, [windowSize]);
 
-  const setBodyHeight = () => {
-    document.body.style.height = `${scrollingContainerRef.current.getBoundingClientRect().height}px`;
-  };
+  const smoothScrollingHandler = useCallback(() => {
+    const data = {
+      ease: 0.1,
+      current: 0,
+      previous: 0,
+      rounded: 0,
+    };
 
-  // 5.
-  useEffect(() => {
-    requestAnimationFrame(() => smoothScrollingHandler());
-  }, []);
-
-  const smoothScrollingHandler = () => {
     data.current = window.scrollY;
     data.previous += (data.current - data.previous) * data.ease;
     data.rounded = Math.round(data.previous * 100) / 100;
@@ -72,7 +63,11 @@ export const SmoothScroll = ({ children }) => {
 
     // Recursive call
     requestAnimationFrame(() => smoothScrollingHandler());
-  };
+  }, []);
+
+  useEffect(() => {
+    requestAnimationFrame(() => smoothScrollingHandler());
+  }, [smoothScrollingHandler]);
 
   return (
     <SmoothScrollStyle>

@@ -1,9 +1,9 @@
-import * as React from "react";
-import { MenuContainer, MenuStyle, Navbar, SocialMedia } from "./menu.style";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
+import * as React from "react";
 import { useContext } from "react";
 import { CustomCursorContext } from "../magic-cursor";
+import { MenuContainer, MenuStyle, Navbar, SocialMedia } from "./menu.style";
 
 export interface IMenuProps {
   show: boolean;
@@ -14,7 +14,7 @@ export default function Menu(props: IMenuProps) {
   const { setType } = useContext(CustomCursorContext);
 
   return (
-    <MenuStyle show={props.show}  onMouseEnter={() => setType("menu")} onMouseLeave={() => setType("default")}>
+    <MenuStyle show={props.show} onMouseEnter={() => setType("menu")} onMouseLeave={() => setType("default")}>
       <MenuContainer show={props.show}>
         <Navbar>
           <ul>
@@ -28,9 +28,9 @@ export default function Menu(props: IMenuProps) {
               <Link href="/#skills">Skills</Link>
             </li>
             <li>
-            <li>
-              <Link href="/#jobs">Career</Link>
-            </li>
+              <li>
+                <Link href="/#jobs">Career</Link>
+              </li>
               <Link href="/#education">Education</Link>
             </li>
           </ul>

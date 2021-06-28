@@ -10,7 +10,7 @@ export interface IHeaderProps {
   toggleMenu: () => void;
 }
 
-export default function Header(props: IHeaderProps) {
+export function Header(props: IHeaderProps) {
   return (
     <HeaderContainerStyle>
       <HeaderStyle centeredY>
@@ -19,9 +19,9 @@ export default function Header(props: IHeaderProps) {
             <Logo centered />
 
             <ToggleMenu onClick={props.toggleMenu} oppened={props.showMenu}>
-              <span></span>
-              <span></span>
-              <span></span>
+              <span />
+              <span />
+              <span />
             </ToggleMenu>
           </Flex>
         </Container>

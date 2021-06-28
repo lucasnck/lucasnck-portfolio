@@ -1,14 +1,13 @@
-import * as React from "react";
-import { Container, Flex } from "../../../../components";
+import React, { useContext } from "react";
+import { Babel } from "../babel";
+import { Container } from "../container";
+import { Flex } from "../flex";
+import { CustomCursorContext } from "../magic-cursor";
 import { Avatar, FullBannerDescription, FullBannerStyle, TagList } from "./fullbanner.style";
-import Image from "next/image";
-import { Babel } from "../../../../components/babel";
-import { useContext } from "react";
-import { CustomCursorContext } from "../../../../components/magic-cursor";
 
 export interface IFullBannerProps {}
 
-export default function FullBanner(props: IFullBannerProps) {
+export function FullBanner(props: IFullBannerProps) {
   const { setType } = useContext(CustomCursorContext);
 
   return (
@@ -16,15 +15,7 @@ export default function FullBanner(props: IFullBannerProps) {
       <Container>
         <Flex centeredY column-sm>
           <Avatar>
-            <Image
-              alt="brain"
-              src="/images/me.jpg"
-              layout="fixed"
-              objectFit="inherit"
-              quality={100}
-              width={220}
-              height={220}
-            />
+            <img alt="brain" src="/images/me.jpg" width={220} height={220} />
           </Avatar>
           <FullBannerDescription onMouseEnter={() => setType("hamburger")} onMouseLeave={() => setType("default")}>
             <h1>Lucas Ribeiro - Frontend developer</h1>

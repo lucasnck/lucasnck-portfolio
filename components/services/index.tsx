@@ -1,7 +1,10 @@
-import Image from "next/image";
 import * as React from "react";
-import { Container, Flex, Mark, Slider, Text } from "../../../../components";
-import { Section } from "../../../../components/section";
+import { Container } from "../container";
+import { Flex } from "../flex";
+import { Mark } from "../mark";
+import { Section } from "../section";
+import { Slider } from "../slider";
+import { Text } from "../text";
 import { ServiceItem, ServiceStyle } from "./services.style";
 
 export interface IServicesProps {}
@@ -33,14 +36,14 @@ const settings = {
   ],
 };
 
-export default function Services(props: IServicesProps) {
+export function Services(props: IServicesProps) {
   return (
     <Section id="services">
       <ServiceStyle>
         <Container>
           <Flex column centeredY style={{ marginBottom: "1rem" }}>
             <div>
-              <Image alt="brain" src="/images/florest-pc.png" width={150} height={150} />
+              <img alt="serices" src="/images/florest-pc.png" width={150} height={150} />
             </div>
             <Text type="primary" as="h2" align="center" fontSize="32px">
               "Before I got here, <br />

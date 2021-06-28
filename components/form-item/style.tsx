@@ -7,5 +7,5 @@ export const FormItemStyle = styled.div`
 export const ErrorMessage = styled.div`
   line-height: 40px;
   height: 40px;
-  color: ${props => props.theme.colors.secondary};
+  color: ${(props) => props.theme.colors.secondary};
 `;

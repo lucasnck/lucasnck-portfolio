@@ -8,7 +8,7 @@ interface IInputProps extends React.TextareaHTMLAttributes<HTMLTextAreaElement>,
 export function TextArea(props: IInputProps) {
   return (
     <InputContainerStyle>
-      <label>{props.label}</label>
+      <label htmlFor={props.id}>{props.label}</label>
       <InputStyle {...props}>
         <textarea placeholder={props.placeholder} name={props.name} id={props.id} />
       </InputStyle>

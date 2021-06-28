@@ -8,7 +8,7 @@ interface IInputProps extends React.InputHTMLAttributes<HTMLInputElement>, IInpu
 export function Input(props: IInputProps) {
   return (
     <InputContainerStyle>
-      <label>{props.label}</label>
+      <label htmlFor={props.id}>{props.label}</label>
       <InputStyle {...props}>
         <input placeholder={props.placeholder} name={props.name} id={props.id} />
       </InputStyle>

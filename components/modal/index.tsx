@@ -17,9 +17,7 @@ export const Modal: React.FC<IModalProps> = (props) => {
           <ModalContent>
             <Flex end>
               <Button onClick={props.toggle}>
-                <span>
-                  <i className="fal fa-times"></i> X
-                </span>
+                <span>X</span>
               </Button>
             </Flex>
             {props.children}

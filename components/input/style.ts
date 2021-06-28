@@ -1,13 +1,12 @@
 import styled from "styled-components";
-import { theme } from "../../theme/sith.theme";
 import is from "styled-is";
+import { theme } from "../../theme/sith.theme";
 
 export interface IInput {
   colorType?: keyof typeof theme.colors;
   skewed?: boolean;
 }
-export const InputContainerStyle = styled.div`
-`;
+export const InputContainerStyle = styled.div``;
 
 export const InputStyle = styled.div<IInput>`
   background-color: transparent;
@@ -29,7 +28,7 @@ export const InputStyle = styled.div<IInput>`
     font-size: 0.9em;
     &::placeholder {
       font-size: 0.9em;
-      color: ${(props) => props.theme.colors["light"]};
+      color: ${(props) => props.theme.colors.light};
     }
   }
   input {

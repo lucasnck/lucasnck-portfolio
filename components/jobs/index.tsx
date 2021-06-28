@@ -1,6 +1,7 @@
 import * as React from "react";
-import { Container, Slider } from "../../../../components";
-import { Section } from "../../../../components/section";
+import { Container } from "../container";
+import { Section } from "../section";
+import { Slider } from "../slider";
 import { JobItem, JobsStyle } from "./jobs.style";
 
 export interface IJobsProps {}
@@ -39,7 +40,7 @@ const settings = {
   ],
 };
 
-export default function Jobs(props: IJobsProps) {
+export function Jobs(props: IJobsProps) {
   return (
     <Section id="jobs">
       <JobsStyle>

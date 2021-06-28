@@ -1,16 +1,11 @@
 import * as React from "react";
 import Head from "next/head";
-import FullBanner from "./compose/fullbanner";
-import About from "./compose/about";
-import Services from "./compose/services";
-import Skills from "./compose/skills";
-import Jobs from "./compose/jobs";
-import Education from "./compose/education";
-import Newsletter from "./compose/newsletter";
+import { About } from "../../components/about";
+import { Education, FullBanner, Jobs, Newsletter, Services, Skills } from "../../components";
 
 export interface IHomeProps {}
 
-export function HomePage(props: IHomeProps) {
+export default function HomePage(props: IHomeProps) {
   return (
     <>
       <Head>

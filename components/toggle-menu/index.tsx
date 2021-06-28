@@ -1,6 +1,6 @@
 import styled from "styled-components";
+import { match } from "styled-is";
 import { Button } from "../button";
-import is, { match } from "styled-is";
 
 export const ToggleMenu = styled<{ oppened: boolean }>(Button)`
   display: flex;

@@ -1,11 +1,13 @@
 import * as React from "react";
-import { Button, Container, Mark } from "../../../../components";
-import { Section } from "../../../../components/section";
+import { Button } from "../button";
+import { Container } from "../container";
+import { Mark } from "../mark";
+import { Section } from "../section";
 import { AboutStyle } from "./about.style";
 
 export interface IAboutProps {}
 
-export default function About(props: IAboutProps) {
+export function About(props: IAboutProps) {
   return (
     <Section id="about">
       <AboutStyle>
@@ -22,8 +24,8 @@ export default function About(props: IAboutProps) {
                 <Mark type="secondary">profissão</Mark>. No ensino médio estudei em escola de tecnologia e informação
                 durante um período. Em 2013 iniciei na graduação de Desenvolvimento de Sistemas. Meu{" "}
                 <Mark type="secondary">trabalho científico</Mark>
-                para conclusão do curso foi sobre Gerador de Artefatos Web, você pode <a href="#">ver mais</a> sobre o
-                trabalho ou conferir os artigos que fiz <a href="#">mais pra baixo</a>. <br />
+                para conclusão do curso foi sobre Gerador de Artefatos Web, você pode <a href="/#">ver mais</a> sobre o
+                trabalho ou conferir os artigos que fiz <a href="/#">mais pra baixo</a>. <br />
                 Inicei como desenvolvedor na linguagem <Mark type="secondary">Java</Mark>, implementando um sistema web
                 de ERP para agropecuária. Fiz estágio na faculdade como desenvolvedor{" "}
                 <Mark type="secondary">front-end</Mark> e desde então construo carreira na área, atuando com{" "}
@@ -31,7 +33,7 @@ export default function About(props: IAboutProps) {
                 plataformas.
               </p>
               <div>
-                <Button type="primary" outlined skewed={true}>
+                <Button type="primary" outlined skewed>
                   <span>download cv</span>
                 </Button>
               </div>

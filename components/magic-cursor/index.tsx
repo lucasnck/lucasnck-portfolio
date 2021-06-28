@@ -1,5 +1,4 @@
-import React, { useContext, useState } from "react";
-import { createContext } from "react";
+import React, { useContext, useState, createContext } from "react";
 import { MagicMouseStyle } from "./style";
 
 export type CursorLookType = "hamburger" | "menu" | "default";
@@ -13,13 +12,11 @@ export const CustomCursorContext = createContext<CustomCursorType>({
   setType: () => {},
 });
 
-const CustomCursorManager = ({ children }) => {
+export const CustomCursorManager = ({ children }) => {
   const [type, setType] = useState<CursorLookType>("default");
 
   return <CustomCursorContext.Provider value={{ type, setType }}>{children}</CustomCursorContext.Provider>;
 };
-
-export default CustomCursorManager;
 
 export const CustomCursor = () => {
   const { type } = useContext(CustomCursorContext);
@@ -48,12 +45,10 @@ export const CustomCursor = () => {
         mouseY - mainCursor.current.clientHeight / 2
       }px, 0)`;
     });
-
-    return () => {};
   }, []);
 
   React.useEffect(() => {
-    const followMouse = () => {
+    function followMouse() {
       positionRef.current.key = requestAnimationFrame(followMouse);
       const { mouseX, mouseY, destinationX, destinationY, distanceX, distanceY } = positionRef.current;
       if (!destinationX || !destinationY) {
@@ -71,16 +66,16 @@ export const CustomCursor = () => {
         }
       }
       secondaryCursor.current.style.transform = `translate3d(${destinationX}px, ${destinationY}px, 0)`;
-    };
+    }
     followMouse();
   }, []);
   return (
     <MagicMouseStyle className={`cursor-wrapper ${type}`}>
       <div className="main-cursor" ref={mainCursor}>
-        <div className="main-cursor-background"></div>
+        <div className="main-cursor-background" />
       </div>
       <div className="secondary-cursor" ref={secondaryCursor}>
-        <div className="cursor-background"></div>
+        <div className="cursor-background" />
       </div>
     </MagicMouseStyle>
   );

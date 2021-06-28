@@ -1,11 +1,12 @@
 import * as React from "react";
-import { Container, Flex } from "../../../../components";
-import { Section } from "../../../../components/section";
-import { EducationStyle, EducationList } from "./education.style";
+import { Container } from "../container";
+import { Flex } from "../flex";
+import { Section } from "../section";
+import { EducationList, EducationStyle } from "./education.style";
 
 export interface IEducationProps {}
 
-export default function Education(props: IEducationProps) {
+export function Education(props: IEducationProps) {
   return (
     <Section id="education">
       <EducationStyle hovered>
