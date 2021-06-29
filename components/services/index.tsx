@@ -49,46 +49,66 @@ export function Services(props: IServicesProps) {
               "Before I got here, <br />
               it was all bush"
             </Text>
+            <Text type="text-light" as="p" align="center" fontSize="18px">
+              Looking for developer? Maybe I can help you with my services:
+            </Text>
           </Flex>
           <Slider {...settings}>
             <ServiceItem>
               <div>
-                <h2>E-commerce Development</h2>
+                <h2>E-commerce</h2>
                 <p>
-                  Desenvolvimento e manutenção especializado em <Mark type="secondary">e-commerce</Mark>, potendo te
-                  ajudar com construção de ferramentas para <Mark type="secondary">alavancar vendas</Mark>,
-                  desenvolviento de lojas completas, configurações em plataformas, adicionando funcionalidades e
-                  ferramentas de marketplace, retire na loja, organização de loja, tagueamento para SEO, testes A/B,
-                  correções de problemas, melhorias, entre outros.
+                  Desenvolvimento e manutenção especializada em <Mark type="secondary">e-commerce</Mark>, com o objetivo
+                  de <Mark type="secondary">alavancar suas vendas</Mark>. Desenvolviento do zero, adicionando novas
+                  melhorias, manutenção/correção, configurações em plataformas como adição de funcionalidades de
+                  marketplace, retire na loja, organização de cadastros, performance e velocidade de carregamento, etc.
+                  Também atuando com tagueamento para SEO, testes A/B, tagueamento para performance, entre outros.
                 </p>
                 <p>
-                  As plataformas que já atuei são: <Mark type="secondary">VTEX</Mark>, Loja Integrada, Woocommerce,
-                  tray, Idealeware, entre outras.
-                </p>
-              </div>
-            </ServiceItem>
-            <ServiceItem>
-              <div>
-                <h2>Static Websites and Blogs</h2>
-                <p>
-                  Desenvolvimento e manutenção com <Mark type="secondary">alta tecnologia</Mark> e eficiência, na
-                  plataforma Wordpress ou do zero com
-                  <Mark type="secondary">NextJS</Mark>, auxiliando com tagueamento para SEO e adição de ferramentas de
-                  monitoração de comportamento de usuário e integração com APIs.
+                  Plataformas: <Mark type="secondary">VTEX</Mark>, Loja Integrada, Woocommerce, Tray, Idealeware, entre
+                  outras.
                 </p>
                 <p>
-                  É possível criar a página para sua empresa com <Mark type="secondary">Wordpress</Mark> ou a tecnologia
-                  NextJS e Gatsby, em conjunto com uma solução de <Mark type="secondary">CMS</Mark>
+                  Tecnologias: React, jQuery, JavaScript, CSS, <Mark type="secondary">GTM</Mark>, Google Analytics,
+                  Optimize, Hotjar, entre outras.
                 </p>
               </div>
             </ServiceItem>
             <ServiceItem>
               <div>
-                <h2>Front-end Development and Architeture</h2>
+                <h2>Static and Blogs</h2>
                 <p>
-                  Desenvolvimento e arquitetura de projetos Front-end utilizando MF (Micro Front-end). Posso lhe ajudar
-                  organizando sua estrutura de projeto e visando suas necessidades para implantação de alta tecnologia
-                  para melhorar a performance de desenvolvimento do seu time.
+                  Desenvolvimento e manutenção com <Mark type="secondary">alta tecnologia</Mark> e eficiência,
+                  utilizando as tecnologias
+                  <Mark type="secondary">NextJS</Mark>, Wordpress, React, TypeScript, entre outras. Marcações para SEO e
+                  adição de ferramentas de comportamento de usuário e integração com APIs para adição de
+                  funcionalidades.
+                </p>
+                <p>
+                  Plataformas de <Mark type="secondary">CMS</Mark>, com as tecnologias NextJS ou Gatsby e{" "}
+                  <Mark type="secondary">Wordpress</Mark>
+                </p>
+                <p>
+                  Tecnologias: React, jQuery, JavaScript, Bootstrap, CSS, <Mark type="secondary">GTM</Mark>, Google
+                  Analytics, Optimize, Hotjar, entre outras.
+                </p>
+              </div>
+            </ServiceItem>
+            <ServiceItem>
+              <div>
+                <h2>Frontend Architeture</h2>
+                <p>
+                  Estou em constante aprendizado em arquitetura de frontend, mas posso te ajudar com desenvolvimento e
+                  tomadas de decisão para <Mark type="secondary">construção de plataforma</Mark>, estrutura e
+                  organização de projetos com ESLint, Prettier, padrões de desenvolvimento de componentes, testes,
+                  repositórios GIT, MF (Micro-frontend), frameworks, etc.
+                </p>
+                <p>
+                  Tecnologias/Conceitos/Frameworks: <Mark type="secondary">React</Mark>, JavaScript, Design System,
+                  Style, Angular, VueJS, <Mark type="secondary">NextJS</Mark>, Typescript, Single-spa, Yarn workspaces,
+                  Lerna, Vanilla, Multi-repo, Mono-repo, <Mark type="secondary">Azure DevOps</Mark>, AWS, Packages,
+                  Multi domain, subdomain, environments, Webpack, ESLint, Prettier, Gulp, React Testing Library,
+                  Loaders, Github, <Mark type="secondary">Vercel</Mark>, Gatsby, Git, Bitbucket, Whitelabel, etc{" "}
                 </p>
               </div>
             </ServiceItem>

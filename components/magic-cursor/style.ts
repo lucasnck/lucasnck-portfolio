@@ -31,7 +31,7 @@ export const MagicMouseStyle = styled.div`
     height: 20px;
     /* visibility: hidden; */
     mix-blend-mode: difference;
-    transition: all 0.10s linear;
+    transition: all 0.1s linear;
     .cursor-background {
       transition: all 0.5s linear;
       width: 100%;
@@ -54,7 +54,7 @@ export const MagicMouseStyle = styled.div`
       height: 300px;
       .cursor-background {
         /* background: linear-gradient(-45deg, #27fcfa, #6e25c8, #4514a7, #9692ad); */
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(110, 37, 200, 0.8)), url("/images/dev.gif");
+        background: linear-gradient(0deg, rgba(37, 34, 43, 0.4), rgba(37, 34, 43, 0.9)), url("/images/dev.gif");
         background-size: 350% auto;
         background-position: 35% 15%;
         animation: gradient 30s ease infinite !important;

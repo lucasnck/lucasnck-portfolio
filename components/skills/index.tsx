@@ -56,7 +56,6 @@ const settings = {
 };
 
 export function Skills(props: ISkillsProps) {
-
   return (
     <Section id="skills">
       <SkillStyle>
@@ -68,11 +67,10 @@ export function Skills(props: ISkillsProps) {
           </div>
           <div className="internal-container">
             <div className="header">
-              <h2>Skills and Experience</h2>
+              <h2>Skills and Projects</h2>
               <Text as="span" type="text-light">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book.
+                Tecnologias, ferramentas, frameworks e os projetos que já atuei, conhecimentos adquiridos durante minha
+                carreira e também o desenvolvimento de projetos pessoais.
               </Text>
             </div>
 
@@ -85,7 +83,8 @@ export function Skills(props: ISkillsProps) {
                     </Icon>
                   </h3>
                   <Text as="span" type="text-light">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    React Hooks experience with Compound, Render Props, High Order Components, Classical, Function
+                    Components, Custom Hooks, Events, etc.
                   </Text>
                 </div>
               </Item>
@@ -98,7 +97,8 @@ export function Skills(props: ISkillsProps) {
                     </Icon>
                   </h3>
                   <Text as="span" type="text-light">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Typescript or ECMAScript with React, Node and Angular, object oriented programming, interfaces,
+                    abstract classes, generics, decorations, enums, mixins, namespace and others.
                   </Text>
                 </div>
               </Item>
@@ -111,7 +111,8 @@ export function Skills(props: ISkillsProps) {
                     </Icon>
                   </h3>
                   <Text as="span" type="text-light">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    JavaScript, Vanilla, ECMAScript, global variables, events, promises, async/await and builder, method
+                    chain, module pattern.
                   </Text>
                 </div>
               </Item>

@@ -26,7 +26,7 @@ const GlobalStyle = createGlobalStyle`
     background-color: #252331;
     margin: 0;
     @media (min-width: 992px) {
-      background-position: -245px -215px;
+      background-position: 19% -11%;
     }
   }
   .carousel .slide {
@@ -52,8 +52,9 @@ function MyApp({ Component, pageProps }) {
           rel="stylesheet"
         />
         <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet" />
-        <link rel="icon" sizes="16x16" href="/fav.png" />
 
+        <title>Lucas Ribeiro - Frontend Developer</title>
+        <link rel="icon" sizes="16x16" href="/fav.png" />
         <meta name="theme-color" content="#4514a7" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta

@@ -3,9 +3,9 @@ import is from "styled-is";
 
 export const Babel = styled.span`
   display: inline-block;
-  line-height: 25px;
-  padding: 0 0.5rem;
-  font-size: 12px;
+  line-height: 15px;
+  padding: 0 0.3rem;
+  font-size: 10px;
   color: ${(props) => props.theme.colors.light};
   background-color: ${(props) => props.theme.colors[props.type]};
   ${is("outlined")`
