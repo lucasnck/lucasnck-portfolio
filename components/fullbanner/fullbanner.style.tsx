@@ -19,6 +19,7 @@ export const Avatar = styled.div`
   overflow: hidden;
   flex-shrink: 0;
   margin-bottom: 2rem;
+  position: relative;
   div {
     overflow: initial !important;
     img {
