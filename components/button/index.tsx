@@ -2,7 +2,7 @@ import styled from "styled-components";
 import is from "styled-is";
 
 export const Button = styled.button`
-  height: 40px;
+  min-height: 40px;
   padding: 0 1rem;
   font-size: 16px;
   background-image: none;
@@ -10,12 +10,36 @@ export const Button = styled.button`
   cursor: pointer;
   border: 1px solid transparent;
   color: #fff;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  outline: none;
+  text-decoration: none;
+  ${is("type")`
+    background-color: ${(props) => props.theme.colors[props.type]};
+    cursor: pointer;
+    border: 1px solid ${(props) => props.theme.colors[props.type]};
+    border-radius: 4px;
+  `}
+  ${is("mAuto")`
+    margin: 0 auto;
+  `}
   ${is("outlined")`
     background-color: transparent;
     color: ${(props) => props.theme.colors[props.type]};
     border: 1px solid ${(props) => props.theme.colors[props.type]};
+
+    
+
+    ${is("disabled")`
+      background-color: transparent;
+      color: ${(props) => props.theme.colors["text-light"]};
+      border: 1px solid ${(props) => props.theme.colors["text-light"]};
+    `}
+    
   `}
   ${is("skewed")`
+    border-radius: 0;
     transform: skew(${(props) => props.theme.skew.xs});
     @media (min-width: ${(props) => props.theme.screen.sm}) {
       transform: skew(${(props) => props.theme.skew.sm});

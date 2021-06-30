@@ -35,7 +35,7 @@ export function Newsletter(props: INewsletterProps) {
   };
 
   return (
-    <>
+    <section id="newsletter">
       <NewsletterStyle>
         <NewsletterSkewed />
         <Container>
@@ -100,6 +100,6 @@ export function Newsletter(props: INewsletterProps) {
           Assim que for possível eu entrarei em contato com você.
         </Text>
       </Modal>
-    </>
+    </section>
   );
 }

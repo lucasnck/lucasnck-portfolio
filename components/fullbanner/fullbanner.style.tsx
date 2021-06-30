@@ -4,11 +4,12 @@ export const FullBannerStyle = styled.div`
   width: 100%;
   display: flex;
   align-items: start;
+  padding-top: 100px;
   @media (min-width: ${(props) => props.theme.screen.md}) {
     min-height: 100vh;
     align-items: center;
+    padding-top: 0;
   }
-  padding-top: 100px;
   margin-bottom: 5rem;
 `;
 
@@ -95,5 +96,21 @@ export const TagList = styled.ul`
     @media (min-width: ${(props) => props.theme.screen.md}) {
       margin-bottom: 0;
     }
+  }
+`;
+
+export const ScrollDown = styled.div`
+  text-align: center;
+  margin: 5rem auto 0 auto;
+  color: #fff;
+  a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: ${props => props.theme.colors.primary};
+  }
+  svg {
+    width: 30px;
+    margin: 0 auto;
   }
 `;

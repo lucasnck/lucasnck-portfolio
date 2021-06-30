@@ -11,6 +11,7 @@ export const ToggleMenu = styled<{ oppened: boolean }>(Button)`
   padding: 0;
   height: 25px;
   width: 35px;
+  min-height: auto;
   span {
     display: block;
     position: absolute;

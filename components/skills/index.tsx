@@ -67,7 +67,7 @@ export function Skills(props: ISkillsProps) {
           </div>
           <div className="internal-container">
             <div className="header">
-              <h2>Skills and Projects</h2>
+              <h2>Skills and Experiences</h2>
               <Text as="span" type="text-light">
                 Tecnologias, ferramentas, frameworks e os projetos que já atuei, conhecimentos adquiridos durante minha
                 carreira e também o desenvolvimento de projetos pessoais.
@@ -264,7 +264,4 @@ export function Skills(props: ISkillsProps) {
       </SkillStyle>
     </Section>
   );
-}
-function useCallback(arg0: (id: any) => void, arg1: undefined[]) {
-  throw new Error("Function not implemented.");
 }

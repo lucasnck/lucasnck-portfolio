@@ -35,7 +35,7 @@ export const AboutStyle = styled.div`
 
   .message {
     transform: skew(-2deg);
-    padding: 1rem 2.5rem 2rem 2.5rem;
+    padding: 1rem 0.5rem 2rem 2.5rem;
     box-sizing: border-box;
     color: #ffffff;
     @media (min-width: ${(props) => props.theme.screen.sm}) {

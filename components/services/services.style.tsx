@@ -13,7 +13,7 @@ export const ServiceItem = styled.div`
   > div {
     background-color: #262432;
     color: #ffffff;
-    padding: 35px 40px;
+    padding: 1rem 2rem;
     position: relative;
     border-radius: 8px;
     margin-right: 15px;

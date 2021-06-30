@@ -1,9 +1,10 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useContext } from "react";
 import { Babel } from "../babel";
 import { Container } from "../container";
 import { Flex } from "../flex";
 import { CustomCursorContext } from "../magic-cursor";
-import { Avatar, FullBannerDescription, FullBannerStyle, TagList } from "./fullbanner.style";
+import { Avatar, FullBannerDescription, FullBannerStyle, ScrollDown, TagList } from "./fullbanner.style";
 
 export interface IFullBannerProps {}
 
@@ -81,6 +82,12 @@ export function FullBanner(props: IFullBannerProps) {
             </TagList>
           </FullBannerDescription>
         </Flex>
+        <ScrollDown>
+          <a href="/#about">
+            <span>scroll down</span>
+            <FontAwesomeIcon icon={"chevron-down"} />
+          </a>
+        </ScrollDown>
       </Container>
     </FullBannerStyle>
   );

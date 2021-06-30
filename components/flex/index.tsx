@@ -17,10 +17,14 @@ export const Flex = styled.div<IFlex>`
   height: 100%;
   position: relative;
 
+  ${is("columnReverseXs")`
+    flex-direction: column-reverse;
+  `}
+
   @media (min-width: ${(props) => props.theme.screen.md}) {
     ${is("startXMd")`
-    justify-content: start;
-  `}
+      justify-content: start;
+    `}
   }
   ${is("centeredX")`
     justify-content: center;
@@ -50,7 +54,7 @@ export const Flex = styled.div<IFlex>`
   `}
   ${is("end")`
     justify-content: flex-end;
-    align-items: end;
+    align-items: flex-end;
   `}
 
   

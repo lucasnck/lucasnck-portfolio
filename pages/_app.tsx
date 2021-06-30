@@ -1,6 +1,7 @@
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { far } from "@fortawesome/free-regular-svg-icons";
+import { fas } from "@fortawesome/free-solid-svg-icons";
 import Head from "next/head";
 import React from "react";
 import "slick-carousel/slick/slick-theme.css";
@@ -10,7 +11,7 @@ import { Wrapper } from "../components/wrapper";
 import { theme } from "../theme/sith.theme";
 import { Theme } from "../theme/theme.provider";
 
-library.add(fab, far);
+library.add(fab, far, fas);
 
 const GlobalStyle = createGlobalStyle`
   html {

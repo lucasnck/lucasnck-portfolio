@@ -1,7 +1,9 @@
 import * as React from "react";
 import { Container } from "../container";
+import { Flex } from "../flex";
 import { Section } from "../section";
 import { Slider } from "../slider";
+import { Text } from "../text";
 import { JobItem, JobsStyle } from "./jobs.style";
 
 export interface IJobsProps {}
@@ -45,6 +47,16 @@ export function Jobs(props: IJobsProps) {
     <Section id="jobs">
       <JobsStyle>
         <Container>
+          <Flex column centeredY style={{ marginBottom: "1rem" }}>
+            <Text type="primary" as="h2" align="center" fontSize="32px">
+              "Frontend Developer with
+              <br /> 5 years of experience"
+            </Text>
+            <Text type="text-light" as="p" align="center" fontSize="18px">
+              My previous experience consist with E-commerce development, static and blog pages,
+              <br /> financial intitution platform, DX development, ERP and more.
+            </Text>
+          </Flex>
           <div
             style={{
               width: "100%",

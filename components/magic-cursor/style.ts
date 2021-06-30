@@ -29,7 +29,6 @@ export const MagicMouseStyle = styled.div`
   .secondary-cursor {
     width: 20px;
     height: 20px;
-    /* visibility: hidden; */
     mix-blend-mode: difference;
     transition: all 0.1s linear;
     .cursor-background {
@@ -37,27 +36,20 @@ export const MagicMouseStyle = styled.div`
       width: 100%;
       height: 100%;
       border-radius: 50%;
-      /* border: 1px solid black; */
-      animation: fadeOut 10s cubic-bezier(0.77, 0, 0.175, 1) 0s forwards;
-
       position: relative;
       opacity: 1;
-
       transform: scale(0.1);
     }
   }
 
   &.hamburger {
     .secondary-cursor {
-      /* visibility: visible; */
       width: 300px;
       height: 300px;
       .cursor-background {
-        /* background: linear-gradient(-45deg, #27fcfa, #6e25c8, #4514a7, #9692ad); */
         background: linear-gradient(0deg, rgba(37, 34, 43, 0.4), rgba(37, 34, 43, 0.9)), url("/images/dev.gif");
         background-size: 350% auto;
         background-position: 35% 15%;
-        animation: gradient 30s ease infinite !important;
         transform: scale(1);
       }
     }

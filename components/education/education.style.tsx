@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const EducationStyle = styled.div`
-  margin-top: 10rem;
   background: rgb(37, 35, 49);
   background: linear-gradient(180deg, rgba(37, 35, 49, 1) 0%, rgba(20, 19, 27, 1) 100%);
   padding-bottom: 15rem;

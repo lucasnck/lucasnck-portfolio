@@ -28,9 +28,12 @@ export default function Menu(props: IMenuProps) {
               <Link href="/#skills">Skills</Link>
             </li>
             <li>
-              <li>
-                <Link href="/#jobs">Career</Link>
-              </li>
+              <Link href="/#jobs">Career</Link>
+            </li>
+            <li>
+              <Link href="/#projects">Projects</Link>
+            </li>
+            <li>
               <Link href="/#education">Education</Link>
             </li>
           </ul>
