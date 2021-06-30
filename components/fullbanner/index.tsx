@@ -85,7 +85,7 @@ export function FullBanner(props: IFullBannerProps) {
         <ScrollDown>
           <a href="/#about">
             <span>scroll down</span>
-            <FontAwesomeIcon icon={"chevron-down"} />
+            <FontAwesomeIcon icon="chevron-down" />
           </a>
         </ScrollDown>
       </Container>

@@ -69,8 +69,8 @@ export function Services(props: IServicesProps) {
                     outros.
                   </p>
                   <p>
-                    Platformas: <Mark type="secondary">VTEX</Mark>, Loja Integrada, Woocommerce, Tray, Idealeware,
-                    entre outras.
+                    Platformas: <Mark type="secondary">VTEX</Mark>, Loja Integrada, Woocommerce, Tray, Idealeware, entre
+                    outras.
                   </p>
                   <p>
                     Tecnologias: React, jQuery, JavaScript, CSS, <Mark type="secondary">GTM</Mark>, Google Analytics,

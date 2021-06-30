@@ -107,7 +107,7 @@ export const ScrollDown = styled.div`
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    color: ${props => props.theme.colors.primary};
+    color: ${(props) => props.theme.colors.primary};
   }
   svg {
     width: 30px;
