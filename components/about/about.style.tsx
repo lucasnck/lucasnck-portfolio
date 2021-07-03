@@ -14,7 +14,7 @@ export const AboutStyle = styled.div`
     margin: 0 auto;
     border: 2px solid #4514a7;
     transform: skew(${(props) => props.theme.skew.xs});
-    margin: 0rem ​0rem 0rem 0rem;
+    margin: 0;
     @media (min-width: ${(props) => props.theme.screen.sm}) {
       width: 90%;
       transform: skew(${(props) => props.theme.skew.sm});
@@ -62,7 +62,6 @@ export const AboutStyle = styled.div`
     @media (min-width: ${(props) => props.theme.screen.xl}) {
       transform: skew(-${(props) => props.theme.skew.xl});
     }
-
   }
 
   button {
