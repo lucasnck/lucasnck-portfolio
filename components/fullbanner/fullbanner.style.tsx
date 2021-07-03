@@ -76,7 +76,6 @@ export const FullBannerDescription = styled.div`
     font-size: 22px;
     @media (min-width: ${(props) => props.theme.screen.md}) {
       flex: 0 0 auto;
-      padding-left: 4rem;
       margin-right: 1rem;
     }
   }
