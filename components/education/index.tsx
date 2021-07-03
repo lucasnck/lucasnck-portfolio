@@ -11,7 +11,7 @@ export function Education(props: IEducationProps) {
     <Section id="education">
       <EducationStyle hovered>
         <Container>
-          <Flex column-sm>
+          <Flex columnMd>
             <div style={{ width: "100%" }}>
               <h2 style={{ marginBottom: "2rem" }}>
                 Education and <br />

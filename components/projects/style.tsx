@@ -2,17 +2,13 @@ import styled from "styled-components";
 import is, { isNot } from "styled-is";
 
 export const ProjectsStyle = styled.div`
-  margin-top: 10rem;
-  margin-bottom: 5rem;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+  padding-top: 10rem;
   background-color: #252330;
   position: relative;
-  .slick-dots {
-    margin-bottom: -3rem;
-  }
   @media (min-width: ${(props) => props.theme.screen.md}) {
-    .slick-dots {
-      margin-bottom: 0;
-    }
+    margin-top: 0;
   }
 `;
 
@@ -41,7 +37,7 @@ export const Item = styled.div`
 
 export const Icon = styled.div`
   max-width: 120px;
-  height: 35px;
+  height: 2rem;
   border-radius: 50%;
   ${isNot("selected")`
     filter: opacity(0.4) grayscale(1);
@@ -102,9 +98,11 @@ export const SelectedProject = styled.div`
   background-color: #000;
   width: 10rem;
   height: 10rem;
+  margin-bottom: 3rem;
   @media (min-width: ${(props) => props.theme.screen.md}) {
     width: 20rem;
     height: 20rem;
+    margin-bottom: 0;
   }
   border-radius: 50%;
   display: flex;

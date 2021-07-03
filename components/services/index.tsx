@@ -19,7 +19,7 @@ const settings = {
   slidesToScroll: 1,
   centerMode: false,
   centerPadding: "15px 0px 0 0",
-  autoplay: true,
+  autoplay: false,
   responsive: [
     {
       breakpoint: 992,
@@ -133,6 +133,32 @@ export function Services(props: IServicesProps) {
                 <div>
                   <Button as="a" type="secondary" href="/#newsletter" mAuto>
                     <span>Contact</span>
+                  </Button>
+                </div>
+              </Flex>
+            </ServiceItem>
+            <ServiceItem>
+              <Flex column spaceBetween>
+                <div>
+                  <h2>Templates</h2>
+                  <p>
+                    Estou em constante aprendizado em arquitetura de frontend, mas posso te ajudar com desenvolvimento e
+                    tomadas de decisão para <Mark type="secondary">construção de Platforma</Mark>, estrutura e
+                    organização de projetos com ESLint, Prettier, padrões de desenvolvimento de componentes, testes,
+                    repositórios GIT, MF (Micro-frontend), frameworks, etc.
+                  </p>
+                  <p>
+                    Tecnologias/Conceitos/Frameworks: <Mark type="secondary">React</Mark>, JavaScript, Design System,
+                    Style, Angular, VueJS, <Mark type="secondary">NextJS</Mark>, Typescript, Single-spa, Yarn
+                    workspaces, Lerna, Vanilla, Multi-repo, Mono-repo, <Mark type="secondary">Azure DevOps</Mark>, AWS,
+                    Packages, Multi domain, subdomain, environments, Webpack, ESLint, Prettier, Gulp, React Testing
+                    Library, Loaders, Github, <Mark type="secondary">Vercel</Mark>, Gatsby, Git, Bitbucket, Whitelabel,
+                    etc{" "}
+                  </p>
+                </div>
+                <div>
+                  <Button as="a" type="text-light" href="/#newsletter" mAuto>
+                    <span>Add to cart</span>
                   </Button>
                 </div>
               </Flex>

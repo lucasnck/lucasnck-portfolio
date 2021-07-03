@@ -44,11 +44,13 @@ export const Flex = styled.div<IFlex>`
       flex-direction: row;
     `}
   }
-  ${is("column-sm")`
-    @media (max-width: ${(props) => props.theme.screen.sm}) {
+
+  @media (max-width: ${(props) => props.theme.screen.md}) {
+    ${is("columnMd")`
       flex-direction: column;
-    }
-  `}
+    `}
+  }
+
   ${is("center")`
     align-items: center;
   `}

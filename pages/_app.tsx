@@ -15,14 +15,15 @@ library.add(fab, far, fas);
 
 const GlobalStyle = createGlobalStyle`
   html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;    
+    font-size: 15px;
   }
   * {
     font-family: 'Nunito', sans-serif;
   }
   body {
     background-image: url("/images/brain.jpg");
-    background-position: 55% -18%;
+    background-position: 55% -10%;
     background-repeat: no-repeat;
     background-color: #252331;
     margin: 0;

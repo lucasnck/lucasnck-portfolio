@@ -14,13 +14,13 @@ export function FullBanner(props: IFullBannerProps) {
   return (
     <FullBannerStyle>
       <Container>
-        <Flex centeredY column-sm>
+        <Flex centeredY columnMd>
           <Avatar>
             <img alt="brain" src="/images/me.jpg" width={220} height={220} />
           </Avatar>
           <FullBannerDescription onMouseEnter={() => setType("hamburger")} onMouseLeave={() => setType("default")}>
             <Flex center style={{ flexWrap: "wrap" }}>
-              <h1 style={{ flex: "0 0 auto", marginRight: "1rem" }}>Lucas Ribeiro - Frontend developer</h1>
+              <h1>Lucas Ribeiro - Frontend developer</h1>
               <Flex className="facebook-like" style={{ flex: "1" }}>
                 <iframe
                   title="facebook-like"

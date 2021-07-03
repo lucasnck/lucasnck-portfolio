@@ -74,6 +74,11 @@ export const FullBannerDescription = styled.div`
   }
   h1 {
     font-size: 22px;
+    @media (min-width: ${(props) => props.theme.screen.md}) {
+      flex: 0 0 auto;
+      padding-left: 4rem;
+      margin-right: 1rem;
+    }
   }
   h1,
   p {
@@ -110,7 +115,7 @@ export const ScrollDown = styled.div`
     color: ${(props) => props.theme.colors.primary};
   }
   svg {
-    width: 30px;
+    width: 14px;
     margin: 0 auto;
   }
 `;

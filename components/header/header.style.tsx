@@ -8,7 +8,7 @@ export const HeaderStyle = styled(Flex)`
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgb(0 0 0 / 20%);
+  background-color: rgb(0 0 0 / 50%);
 `;
 
 export const HeaderContainerStyle = styled.div``;

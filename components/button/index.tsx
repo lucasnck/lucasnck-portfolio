@@ -47,6 +47,12 @@ export const Button = styled.button`
     @media (min-width: ${(props) => props.theme.screen.md}) {
       transform: skew(${(props) => props.theme.skew.md});
     }
+    @media (min-width: ${(props) => props.theme.screen.lg}) {
+      transform: skew(${(props) => props.theme.skew.lg});
+    }
+    @media (min-width: ${(props) => props.theme.screen.xl}) {
+      transform: skew(${(props) => props.theme.skew.xl});
+    }
     > * {
       display: block;
       transform: skew(-${(props) => props.theme.skew.xs});
@@ -55,6 +61,12 @@ export const Button = styled.button`
       }
       @media (min-width: ${(props) => props.theme.screen.md}) {
         transform: skew(-${(props) => props.theme.skew.md});
+      }
+      @media (min-width: ${(props) => props.theme.screen.lg}) {
+        transform: skew(-${(props) => props.theme.skew.lg});
+      }
+      @media (min-width: ${(props) => props.theme.screen.xl}) {
+        transform: skew(-${(props) => props.theme.skew.xl});
       }
     }
   `}

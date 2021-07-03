@@ -36,10 +36,12 @@ export function Footer(props: IFooterProps) {
             </span>
           </Flex>
           <Flex centeredX endXMd>
-            follow on{" "}
-            <a href="instagram.com/lucasnck" target="_blank">
-              instagram
-            </a>
+            <span>
+              follow on{" "}
+              <a href="instagram.com/lucasnck" target="_blank">
+                github
+              </a>
+            </span>
           </Flex>
         </Flex>
       </Container>

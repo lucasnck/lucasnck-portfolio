@@ -3,6 +3,7 @@ import { useCallback, useState } from "react";
 import { Button } from "../button";
 import { Container } from "../container";
 import { Flex } from "../flex";
+import { Section } from "../section";
 import { Slider } from "../slider";
 import { Text } from "../text";
 import { DescriptionContainer, HeaderContainer, Icon, Item, ProjectsStyle, SelectedProject } from "./style";
@@ -44,8 +45,8 @@ const settings = {
     {
       breakpoint: 576,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
+        slidesToShow: 3,
+        slidesToScroll: 3,
       },
     },
   ],
@@ -332,20 +333,9 @@ export function Projects(props: ISkillsProps) {
   }, []);
 
   return (
-    <section id="projects">
+    <Section id="projects">
       <ProjectsStyle>
         <Container>
-          <HeaderContainer>
-            <Flex column center>
-              <Text as="h2" type="primary" fontSize="26px">
-                Projects
-              </Text>
-              <Text as="p" type="text-light">
-                Tecnologias, ferramentas, frameworks e os projetos que já atuei, conhecimentos adquiridos durante minha
-                carreira e também o desenvolvimento de projetos pessoais.
-              </Text>
-            </Flex>
-          </HeaderContainer>
           <Flex rowMd center columnReverseXs>
             <Flex column start>
               <DescriptionContainer loading={loading}>
@@ -393,7 +383,7 @@ export function Projects(props: ISkillsProps) {
           </div>
         </Container>
       </ProjectsStyle>
-    </section>
+    </Section>
   );
 }
 function changed() {
