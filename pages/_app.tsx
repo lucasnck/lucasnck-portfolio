@@ -76,6 +76,7 @@ function MyApp({ Component, pageProps }) {
           content="Lucas Ribeiro - JavaScript developer, specialist in e-commerce and frontend development, tap if you looking for freelancer development."
         />
         <meta property="og:image" content="/images/me.jpg" />
+        <meta name="google-site-verification" content="xJozOPjyFMqeBxTQRFD4NCo4V8qpLu2iX6IVsJ-a5sM" />
 
         <script
           dangerouslySetInnerHTML={{
