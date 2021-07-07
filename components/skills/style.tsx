@@ -110,6 +110,8 @@ export const SkillStyle = styled.div`
 
 export const Item = styled.div`
   color: ${(props) => props.theme.colors.light};
+  padding-right: 1rem;
+  box-sizing: border-box;
 `;
 
 export const Icon = styled.div`

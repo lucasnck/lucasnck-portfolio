@@ -65,8 +65,12 @@ const projects = [
     ),
     description: (
       <>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text ever since the 1500s
+        Modular platform for customers, administrative/operation and partners. <br />
+        <p>
+          technologies: JavaScript, React, Vanilla, NextJS, AWS, Azure DevOps, jQuery, Bootstrap, SmartAdmin, Webpack,
+          NodeJS, ANTD, Rest APIs, DevExtreme, Git Submodules, Micro-frontend, multirepo, monorepo, npm, yarn, git,
+          CSS3/SASS, styled-components, NextJS, CMS, SCRUM.
+        </p>
       </>
     ),
   },
@@ -82,8 +86,11 @@ const projects = [
     ),
     description: (
       <>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text ever since the 1500s
+        <p>
+          technologies: JavaScript, React, Vanilla, NextJS, AWS, Azure DevOps, jQuery, Bootstrap, SmartAdmin, Webpack,
+          NodeJS, ANTD, Rest APIs, DevExtreme, Git Submodules, Micro-frontend, multirepo, monorepo, npm, yarn, git,
+          CSS3/SASS, styled-components, NextJS, CMS, SCRUM.
+        </p>
       </>
     ),
   },
@@ -99,8 +106,8 @@ const projects = [
     ),
     description: (
       <>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text ever since the 1500s
+        technologies: JavaScript, React, NodeJS, jQuery, Graphql, Apollo Client, TypeScript, CSS3/SASS, Gulp, Babel,
+        Rest APIs, GTM, Google Analytics, Optimize, HTML5, Mobile First, GIT, SEO, Performance, VTEX.
       </>
     ),
   },
@@ -116,8 +123,8 @@ const projects = [
     ),
     description: (
       <>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text ever since the 1500s
+        technologies: NextJS 10/11, React, TypeScript, GTM, Optimize, Analytics, Styled-Components, CSS3/SASS, React
+        Hook Form, Static Website, AWS, Azure DevOps, CloudFront, S3, Route53, Git, Yarn.{" "}
       </>
     ),
   },
@@ -130,12 +137,7 @@ const projects = [
         E-commerce <br /> Walfanger
       </>
     ),
-    description: (
-      <>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text ever since the 1500s
-      </>
-    ),
+    description: <>technologies: Angular, Boostrap, CSS3/SASS, TypeScript, JavaScript, ECMAScript, Idealeware</>,
   },
   {
     id: "viewtech",
@@ -149,8 +151,8 @@ const projects = [
     ),
     description: (
       <>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text ever since the 1500s
+        technologies: JavaScript, React, NodeJS, jQuery, Graphql, Apollo Client, TypeScript, CSS3/SASS, Gulp, Babel,
+        Rest APIs, GTM, Google Analytics, Optimize, HTML5, Mobile First, GIT, SEO, Performance, Loja Integrada.
       </>
     ),
   },
@@ -166,8 +168,8 @@ const projects = [
     ),
     description: (
       <>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text ever since the 1500s
+        technologies: JavaScript, React, NodeJS, jQuery, Graphql, Apollo Client, TypeScript, CSS3/SASS, Gulp, Babel,
+        Rest APIs, GTM, Google Analytics, Optimize, HTML5, Mobile First, GIT, SEO, Performance, Loja Integrada.
       </>
     ),
   },
@@ -183,8 +185,8 @@ const projects = [
     ),
     description: (
       <>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text ever since the 1500s
+        technologies: JavaScript, React, NodeJS, jQuery, Graphql, Apollo Client, TypeScript, CSS3/SASS, Gulp, Babel,
+        Rest APIs, GTM, Google Analytics, Optimize, HTML5, Mobile First, GIT, SEO, Performance, Loja Integrada.
       </>
     ),
   },
@@ -200,8 +202,8 @@ const projects = [
     ),
     description: (
       <>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text ever since the 1500s
+        technologies: JavaScript, React, NodeJS, jQuery, Graphql, Apollo Client, TypeScript, CSS3/SASS, Gulp, Babel,
+        Rest APIs, GTM, Google Analytics, Optimize, HTML5, PHP, GIT, SEO, Performance, Wordpress.
       </>
     ),
   },
@@ -216,8 +218,8 @@ const projects = [
     ),
     description: (
       <>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text ever since the 1500s
+        technologies: JavaScript, React, NodeJS, jQuery, Graphql, Apollo Client, TypeScript, CSS3/SASS, Gulp, Babel,
+        Rest APIs, GTM, Google Analytics, Optimize, HTML5, Mobile First, GIT, SEO, Performance, Loja Integrada.
       </>
     ),
   },
@@ -232,8 +234,8 @@ const projects = [
     ),
     description: (
       <>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text ever since the 1500s
+        technologies: JavaScript, React, NodeJS, jQuery, Graphql, Apollo Client, TypeScript, CSS3/SASS, Gulp, Babel,
+        Rest APIs, GTM, Google Analytics, Optimize, HTML5, Mobile First, GIT, SEO, Performance, Loja Integrada.
       </>
     ),
   },
@@ -249,8 +251,8 @@ const projects = [
     ),
     description: (
       <>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text ever since the 1500s
+        technologies: JavaScript, React, NodeJS, jQuery, Graphql, Apollo Client, TypeScript, CSS3/SASS, Gulp, Babel,
+        Rest APIs, GTM, Google Analytics, Optimize, HTML5, Mobile First, GIT, SEO, Performance, Loja Integrada.
       </>
     ),
   },
@@ -265,8 +267,8 @@ const projects = [
     ),
     description: (
       <>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text ever since the 1500s
+        technologies: JavaScript, React, NodeJS, jQuery, Graphql, Apollo Client, TypeScript, CSS3/SASS, Gulp, Babel,
+        Rest APIs, GTM, Google Analytics, Optimize, HTML5, Mobile First, GIT, SEO, Performance, Tray.
       </>
     ),
   },
@@ -279,12 +281,7 @@ const projects = [
         Library <br /> Project Parser
       </>
     ),
-    description: (
-      <>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text ever since the 1500s
-      </>
-    ),
+    description: <>technologies: Java, Java Reflection API, AST (Abstract Syntax Tree), Recursive Methods.</>,
   },
   {
     id: "exparser",
@@ -295,12 +292,7 @@ const projects = [
         Library <br /> eXparser
       </>
     ),
-    description: (
-      <>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text ever since the 1500s
-      </>
-    ),
+    description: <>technologies: Java, Java Reflection API, AST (Abstract Syntax Tree), Recursive Methods.</>,
   },
   {
     id: "IDE Online - Artifact Generator",
@@ -313,8 +305,8 @@ const projects = [
     ),
     description: (
       <>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text ever since the 1500s
+        technologies: Java, Java Reflection API, JSF, Bootstrap, Drag and Drop, jQuery, JavaScript, CSS3, HTML5,
+        PostgreSQL, Hibernate, Criteria API, JPA, MVC, Git, AST (Abstract Syntax Tree), Recusive Methods.
       </>
     ),
   },

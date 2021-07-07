@@ -61,20 +61,20 @@ export function Services(props: IServicesProps) {
                 <div>
                   <h2>E-commerce</h2>
                   <p>
-                    Desenvolvimento e manutenção especializada em <Mark type="secondary">e-commerce</Mark>, com o
-                    objetivo de <Mark type="secondary">alavancar suas vendas</Mark>. Desenvolviento do zero, adicionando
-                    novas melhorias, manutenção/correção, configurações em Platformas como adição de funcionalidades de
-                    marketplace, retire na loja, organização de cadastros, performance e velocidade de carregamento,
-                    etc. Também atuando com tagueamento para SEO, testes A/B, tagueamento para performance, entre
-                    outros.
+                    Development and maintenance specialized in <Mark type="secondary">e-commerce</Mark>, to{" "}
+                    <Mark type="secondary">level-up your sales</Mark>. Creating your store from scratch,
+                    maintenance/fixes and CMS settings. Also working with SEO markup, performance,{" "}
+                    <Mark type="secondary">A/B testing</Mark>, among others. I also have contact with UI/UX
+                    professionals and designers <Mark type="secondary">to recommend</Mark>.
                   </p>
                   <p>
-                    Platformas: <Mark type="secondary">VTEX</Mark>, Loja Integrada, Woocommerce, Tray, Idealeware, entre
-                    outras.
+                    Previows experience with platforms: <Mark type="secondary">VTEX</Mark>, Loja Integrada, Woocommerce,
+                    Tray, Idealeware.
                   </p>
                   <p>
-                    Tecnologias: React, jQuery, JavaScript, CSS, <Mark type="secondary">GTM</Mark>, Google Analytics,
-                    Optimize, Hotjar, entre outras.
+                    Technologies: JavaScript, React, jQuery, Angular, CSS, <Mark type="secondary">GTM</Mark>, Google
+                    Analytics, Optimize, Google Search Console, Hotjar, Rest and Graphs APIs, Notions of UI/UX,
+                    performance improvements and SEO.
                   </p>
                 </div>
                 <div>
@@ -89,19 +89,14 @@ export function Services(props: IServicesProps) {
                 <div>
                   <h2>Static and Blogs</h2>
                   <p>
-                    Desenvolvimento e manutenção com <Mark type="secondary">alta tecnologia</Mark> e eficiência,
-                    utilizando as tecnologias
-                    <Mark type="secondary">NextJS</Mark>, Wordpress, React, TypeScript, entre outras. Marcações para SEO
-                    e adição de ferramentas de comportamento de usuário e integração com APIs para adição de
-                    funcionalidades.
+                    Development and maintenance with <Mark type="secondary">high technology</Mark> and efficiency, using
+                    the technologies <Mark type="secondary">NextJS</Mark>, Wordpress, React, TypeScript, among others.
+                    Tags for SEO and adding user behavior tools and integration with CMS, APIs or adding new
+                    functionalities.
                   </p>
                   <p>
-                    Platformas de <Mark type="secondary">CMS</Mark>, com as tecnologias NextJS ou Gatsby e{" "}
-                    <Mark type="secondary">Wordpress</Mark>
-                  </p>
-                  <p>
-                    Tecnologias: React, jQuery, JavaScript, Bootstrap, CSS, <Mark type="secondary">GTM</Mark>, Google
-                    Analytics, Optimize, Hotjar, entre outras.
+                    Technologies: NextJS, Gatsby, React, jQuery, JavaScript, Bootstrap, CSS/CSS3, Styled-Components,{" "}
+                    <Mark type="secondary">GTM</Mark>, Google Analytics, Optimize, Hotjar, SEO and others.
                   </p>
                 </div>
                 <div>
@@ -116,49 +111,23 @@ export function Services(props: IServicesProps) {
                 <div>
                   <h2>Frontend Architeture</h2>
                   <p>
-                    Estou em constante aprendizado em arquitetura de frontend, mas posso te ajudar com desenvolvimento e
-                    tomadas de decisão para <Mark type="secondary">construção de Platforma</Mark>, estrutura e
-                    organização de projetos com ESLint, Prettier, padrões de desenvolvimento de componentes, testes,
-                    repositórios GIT, MF (Micro-frontend), frameworks, etc.
+                    I'm a beginner in frontend architecture, but I can help you with development and technology
+                    decisions, to built <Mark type="secondary">platforms</Mark>, structure and project organization with
+                    ESLint, Prettier, component development standards, testing, GIT repositories, MF (Micro-frontend),
+                    frameworks, etc.
                   </p>
                   <p>
-                    Tecnologias/Conceitos/Frameworks: <Mark type="secondary">React</Mark>, JavaScript, Design System,
-                    Style, Angular, VueJS, <Mark type="secondary">NextJS</Mark>, Typescript, Single-spa, Yarn
-                    workspaces, Lerna, Vanilla, Multi-repo, Mono-repo, <Mark type="secondary">Azure DevOps</Mark>, AWS,
-                    Packages, Multi domain, subdomain, environments, Webpack, ESLint, Prettier, Gulp, React Testing
-                    Library, Loaders, Github, <Mark type="secondary">Vercel</Mark>, Gatsby, Git, Bitbucket, Whitelabel,
-                    etc{" "}
+                    Technologies/Concepts/Frameworks: JavaScript, <Mark type="secondary">React</Mark>, Design System,
+                    CSS in JS, Styles, UX/UI, Angular, VueJS, <Mark type="secondary">NextJS</Mark>, Typescript,
+                    Single-spa, Yarn workspaces, Lerna, Vanilla, Lazy loading, web workers, multirepo, monorepo,
+                    multi-stack <Mark type="secondary">Azure DevOps</Mark>, AWS, multidomain, subdomains, environments,
+                    Webpack, ESLint, Prettier, Gulp, Babel, React Testing Library, <Mark type="secondary">Vercel</Mark>,
+                    Gatsby, Git, Bitbucket, etc.
                   </p>
                 </div>
                 <div>
                   <Button as="a" type="secondary" href="/#newsletter" mAuto>
                     <span>Contact</span>
-                  </Button>
-                </div>
-              </Flex>
-            </ServiceItem>
-            <ServiceItem>
-              <Flex column spaceBetween>
-                <div>
-                  <h2>Templates</h2>
-                  <p>
-                    Estou em constante aprendizado em arquitetura de frontend, mas posso te ajudar com desenvolvimento e
-                    tomadas de decisão para <Mark type="secondary">construção de Platforma</Mark>, estrutura e
-                    organização de projetos com ESLint, Prettier, padrões de desenvolvimento de componentes, testes,
-                    repositórios GIT, MF (Micro-frontend), frameworks, etc.
-                  </p>
-                  <p>
-                    Tecnologias/Conceitos/Frameworks: <Mark type="secondary">React</Mark>, JavaScript, Design System,
-                    Style, Angular, VueJS, <Mark type="secondary">NextJS</Mark>, Typescript, Single-spa, Yarn
-                    workspaces, Lerna, Vanilla, Multi-repo, Mono-repo, <Mark type="secondary">Azure DevOps</Mark>, AWS,
-                    Packages, Multi domain, subdomain, environments, Webpack, ESLint, Prettier, Gulp, React Testing
-                    Library, Loaders, Github, <Mark type="secondary">Vercel</Mark>, Gatsby, Git, Bitbucket, Whitelabel,
-                    etc{" "}
-                  </p>
-                </div>
-                <div>
-                  <Button as="a" type="text-light" href="/#newsletter" mAuto>
-                    <span>Add to cart</span>
                   </Button>
                 </div>
               </Flex>

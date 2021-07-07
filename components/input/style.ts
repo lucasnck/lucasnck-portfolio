@@ -37,11 +37,18 @@ export const InputStyle = styled.div<IInput>`
 
   ${is("skewed")`
     transform: skew(${(props) => props.theme.skew.xs});
+    transform: skew(${(props) => props.theme.skew.xs});
     @media (min-width: ${(props) => props.theme.screen.sm}) {
       transform: skew(${(props) => props.theme.skew.sm});
     }
     @media (min-width: ${(props) => props.theme.screen.md}) {
       transform: skew(${(props) => props.theme.skew.md});
+    }
+    @media (min-width: ${(props) => props.theme.screen.lg}) {
+      transform: skew(${(props) => props.theme.skew.lg});
+    }
+    @media (min-width: ${(props) => props.theme.screen.xl}) {
+      transform: skew(${(props) => props.theme.skew.xl});
     }
     > * {
       display: block;
@@ -51,6 +58,12 @@ export const InputStyle = styled.div<IInput>`
       }
       @media (min-width: ${(props) => props.theme.screen.md}) {
         transform: skew(-${(props) => props.theme.skew.md});
+      }
+      @media (min-width: ${(props) => props.theme.screen.lg}) {
+        transform: skew(-${(props) => props.theme.skew.lg});
+      }
+      @media (min-width: ${(props) => props.theme.screen.xl}) {
+        transform: skew(-${(props) => props.theme.skew.xl});
       }
     }
   `}

@@ -33,10 +33,11 @@ export function FullBanner(props: IFullBannerProps) {
               </Flex>
             </Flex>
             <p>
-              Meu nome é Lucas Ribeiro, tenho {new Date().getFullYear() - 1992} anos, solteiro, brasileiro e atualmente
-              moro em Alto de Pinheiros em São Paulo. Sou apaixonado por tecnologia e programação, tenho{" "}
-              {new Date().getFullYear() - 2016} anos de carreira como dev JavaScript. Acredito que um bom desenvolvedor
-              além do conhecimento em tecnologia deve ter interesse pela regra de negócio do projeto que está envolvido.
+              My name is Lucas Ribeiro, I'm {new Date().getFullYear() - 1992} years old, single, Brazilian and currently
+              I live in Alto de Pinheiros in São Paulo. I am passionate about technology and programming, I have{" "}
+              {new Date().getFullYear() - 2016} year career as a JavaScript developer. I believe that a good developer,
+              in addition to technology knowledge, should be interested in the business rule of the project that is
+              involved.
             </p>
             <TagList>
               <li>

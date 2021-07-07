@@ -5,7 +5,6 @@ export const EducationStyle = styled.div`
   background: linear-gradient(180deg, rgba(37, 35, 49, 1) 0%, rgba(20, 19, 27, 1) 100%);
   padding-bottom: 15rem;
   h2 {
-    font-size: 36px;
     text-transform: uppercase;
     color: #6e25c8;
   }

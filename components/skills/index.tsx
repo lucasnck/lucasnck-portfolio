@@ -7,6 +7,8 @@ import GTM from "../icons/gtm";
 import Java from "../icons/java";
 import JavaScript from "../icons/javascript";
 import Optimize from "../icons/optimize";
+import { Sass } from "../icons/sass";
+import VTEX from "../icons/vtex";
 import { Section } from "../section";
 import { Slider } from "../slider";
 import { Text } from "../text";
@@ -69,12 +71,26 @@ export function Skills(props: ISkillsProps) {
             <div className="header">
               <h2>Skills and Experiences</h2>
               <Text as="span" type="text-light">
-                Tecnologias, ferramentas, frameworks e os projetos que já atuei, conhecimentos adquiridos durante minha
-                carreira e também o desenvolvimento de projetos pessoais.
+                Technologies, tools, libraries, frameworks. Knowledge acquired during my career and also the development
+                of personal projects.
               </Text>
             </div>
 
             <Slider {...settings}>
+              <Item>
+                <div>
+                  <h3>
+                    <Icon>
+                      <JavaScript />
+                    </Icon>
+                  </h3>
+                  <Text as="span" type="text-light">
+                    JavaScript, Vanilla, ECMAScript, global variables, events, promises, async/await and builder, method
+                    chain, module pattern.
+                  </Text>
+                </div>
+              </Item>
+
               <Item>
                 <div>
                   <h3>
@@ -97,48 +113,8 @@ export function Skills(props: ISkillsProps) {
                     </Icon>
                   </h3>
                   <Text as="span" type="text-light">
-                    Typescript or ECMAScript with React, Node and Angular, object oriented programming, interfaces,
+                    Typescript and ECMAScript with React, Node and Angular, object oriented programming, interfaces,
                     abstract classes, generics, decorations, enums, mixins, namespace and others.
-                  </Text>
-                </div>
-              </Item>
-
-              <Item>
-                <div>
-                  <h3>
-                    <Icon>
-                      <JavaScript />
-                    </Icon>
-                  </h3>
-                  <Text as="span" type="text-light">
-                    JavaScript, Vanilla, ECMAScript, global variables, events, promises, async/await and builder, method
-                    chain, module pattern.
-                  </Text>
-                </div>
-              </Item>
-
-              {/* <Item>
-                <div>
-                  <h3>
-                    <Icon>
-                      <CsharpIcon />
-                    </Icon>
-                  </h3>
-                  <Text as="span" type="text-light">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                  </Text>
-                </div>
-              </Item> */}
-
-              <Item>
-                <div>
-                  <h3>
-                    <Icon>
-                      <Angular />
-                    </Icon>
-                  </h3>
-                  <Text as="span" type="text-light">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                   </Text>
                 </div>
               </Item>
@@ -151,7 +127,35 @@ export function Skills(props: ISkillsProps) {
                     </Icon>
                   </h3>
                   <Text as="span" type="text-light">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Java with JSF, JPA, Spring Boot, Eclipse, Netbeans, Lambda, Annotations, Reflection API, Criteria
+                    API, Hibernate, JPA.
+                  </Text>
+                </div>
+              </Item>
+
+              <Item>
+                <div>
+                  <h3>
+                    <Icon>
+                      <Sass />
+                    </Icon>
+                  </h3>
+                  <Text as="span" type="text-light">
+                    Sass/CSS3 styles, modules, variables, mixins, functions, tokens, theming, imports, extends, flex,
+                    transitions, transforms, animations
+                  </Text>
+                </div>
+              </Item>
+
+              <Item>
+                <div>
+                  <h3>
+                    <Icon>
+                      <Angular />
+                    </Icon>
+                  </h3>
+                  <Text as="span" type="text-light">
+                    Angular, controlers, forms, renders.
                   </Text>
                 </div>
               </Item>
@@ -164,7 +168,7 @@ export function Skills(props: ISkillsProps) {
                     </Icon>
                   </h3>
                   <Text as="span" type="text-light">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Google Tag Manager, create tags, variables, integrations.
                   </Text>
                 </div>
               </Item>
@@ -177,7 +181,7 @@ export function Skills(props: ISkillsProps) {
                     </Icon>
                   </h3>
                   <Text as="span" type="text-light">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Google Analytics configurations, analysis, create basic reports
                   </Text>
                 </div>
               </Item>
@@ -190,20 +194,7 @@ export function Skills(props: ISkillsProps) {
                     </Icon>
                   </h3>
                   <Text as="span" type="text-light">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                  </Text>
-                </div>
-              </Item>
-
-              {/* <Item>
-                <div>
-                  <h3>
-                    <Icon>
-                      <CSSIcon />
-                    </Icon>
-                  </h3>
-                  <Text as="span" type="text-light">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Optimize Test A/B, UX, UI, Customer Success
                   </Text>
                 </div>
               </Item>
@@ -212,11 +203,11 @@ export function Skills(props: ISkillsProps) {
                 <div>
                   <h3>
                     <Icon>
-                      <SASSIcon />
+                      <VTEX />
                     </Icon>
                   </h3>
                   <Text as="span" type="text-light">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    VTEX CMS e-commerce development, configuration
                   </Text>
                 </div>
               </Item>
@@ -225,38 +216,14 @@ export function Skills(props: ISkillsProps) {
                 <div>
                   <h3>
                     <Icon>
-                      <OptimizeIcon />
+                      <img src="/images/styled-components.png" alt="Styled Components" width="34" />
                     </Icon>
                   </h3>
                   <Text as="span" type="text-light">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Styled-Components, CSS in JS,
                   </Text>
                 </div>
-              </Item> */}
-              {/* <Item>
-              <div>
-                <h3>
-                  <Icon>
-                    <VtexIcon />
-                  </Icon>
-                </h3>
-                <Text as="span" type="text-light">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                </Text>
-              </div>
-            </Item> */}
-              {/* <Item>
-                <div>
-                  <h3>
-                    <Icon>
-                      <GraphqlIcon />
-                    </Icon>
-                  </h3>
-                  <Text as="span" type="text-light">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                  </Text>
-                </div>
-              </Item> */}
+              </Item>
             </Slider>
           </div>
         </Container>
