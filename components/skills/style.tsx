@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
 export const SkillStyle = styled.div`
-  margin-bottom: 5rem;
+  margin-bottom: 0rem;
   background-color: #252330;
   position: relative;
   .internal-container {
-    padding: 5rem 0;
+    @media (min-width: ${(props) => props.theme.screen.md}) {
+      padding: 5rem 0;
+    }
   }
   div > div {
     z-index: 1;

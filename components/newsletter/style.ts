@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const NewsletterStyle = styled.div`
   width: 100%;
-  padding: 5rem 0;
+  padding: 2rem 0;
   display: flex;
   align-items: center;
   background-color: #0b0b0e;
