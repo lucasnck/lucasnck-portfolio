@@ -54,7 +54,8 @@ export function Jobs(props: IJobsProps) {
               <br /> 5y+ of experience"
             </Text>
             <Text type="text-light" as="p" align="center" fontSize="18px">
-              JavaScript and Java developer with experience with e-commerce, DX, platforms, websites and mobile
+              JavaScript and Java developer with experience in e-commerce, DX, platforms, websites and mobile
+              programming.
             </Text>
           </Flex>
           <div

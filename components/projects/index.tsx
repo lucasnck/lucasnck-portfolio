@@ -328,6 +328,14 @@ export function Projects(props: ISkillsProps) {
     <Section id="projects">
       <ProjectsStyle>
         <Container>
+          <Flex column centeredY style={{ marginBottom: "1rem" }}>
+            <Text type="primary" as="h2" align="center" fontSize="32px">
+              Projects
+            </Text>
+            <Text type="text-light" as="p" align="center" fontSize="18px">
+              Projects I've worked on. Some projects may be different from when I worked with them.
+            </Text>
+          </Flex>
           <Flex rowMd center columnReverseXs>
             <Flex column start>
               <DescriptionContainer loading={loading}>
@@ -346,7 +354,7 @@ export function Projects(props: ISkillsProps) {
                   outlined
                   disabled={!selectedProject.url}
                 >
-                  <span>visite o site</span>
+                  <span>visit</span>
                 </Button>
               </DescriptionContainer>
             </Flex>
