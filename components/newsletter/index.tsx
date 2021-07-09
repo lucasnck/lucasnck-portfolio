@@ -15,6 +15,21 @@ import { NewsletterForm, NewsletterSkewed, NewsletterStyle } from "./style";
 
 export interface INewsletterProps {}
 
+function validateForm() {
+  const fields = ["name", "email", "message"];
+
+  const formErrors = [];
+  fields.forEach((n) => {
+    const element = document.getElementsByName(n)[0];
+    const value = (element as HTMLInputElement)?.value;
+    if (!value) {
+      formErrors.push({ code: "REQUIRED", field: n, message: `is required` });
+    }
+  });
+
+  return formErrors;
+}
+
 export function Newsletter(props: INewsletterProps) {
   const modal = useModal();
   const ref = useRef(false);
@@ -43,17 +58,13 @@ export function Newsletter(props: INewsletterProps) {
       setLoading(true);
       event.preventDefault();
 
-      const fields = ["name", "email", "message"];
+      const formErrors = validateForm();
 
-      fields.forEach((n) => {
-        const element = document.getElementsByName(n)[0];
-        const value = (element as HTMLInputElement)?.value;
-        if (!value) {
-          setErrors((prevState) => [...prevState, { code: "REQUIRED", field: n, message: `is required` }]);
-        }
-      });
-
-      await handleSubmit(event);
+      if (formErrors.length) {
+        setErrors(formErrors);
+      } else {
+        await handleSubmit(event);
+      }
     } catch (e) {
       setErrors(e);
     } finally {
