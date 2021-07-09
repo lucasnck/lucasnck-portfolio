@@ -1,5 +1,6 @@
 import { useForm, ValidationError } from "@formspree/react";
-import React, { useState } from "react";
+import { ErrorPayload } from "@formspree/react/dist/types/src/types";
+import React, { useEffect, useRef, useState } from "react";
 import { Button } from "../button";
 import { Container } from "../container";
 import { Flex } from "../flex";
@@ -16,19 +17,45 @@ export interface INewsletterProps {}
 
 export function Newsletter(props: INewsletterProps) {
   const modal = useModal();
+  const ref = useRef(false);
   const [state, handleSubmit] = useForm("xzbyvdrq");
   const [loading, setLoading] = useState(false);
+  const [errors, setErrors] = useState<ErrorPayload[]>([]);
 
-  if (state.succeeded) {
-    (document.getElementById("newsletter-form") as HTMLFormElement).reset();
-    modal.setShow(true);
-  }
+  useEffect(() => {
+    if (!ref.current && state.succeeded) {
+      ref.current = true;
+      (document.getElementById("newsletter-form") as HTMLFormElement).reset();
+      modal.setShow(true);
+    }
+  }, [modal, state]);
+
+  useEffect(() => {
+    if (state.errors) {
+      setErrors(state.errors);
+    }
+  }, [state.errors]);
 
   const onSubmit = async (event) => {
     try {
+      setErrors([]);
+      ref.current = false;
       setLoading(true);
       event.preventDefault();
+
+      const fields = ["name", "email", "message"];
+
+      fields.forEach((n) => {
+        const element = document.getElementsByName(n)[0];
+        const value = (element as HTMLInputElement)?.value;
+        if (!value) {
+          setErrors((prevState) => [...prevState, { code: "REQUIRED", field: n, message: `is required` }]);
+        }
+      });
+
       await handleSubmit(event);
+    } catch (e) {
+      setErrors(e);
     } finally {
       setLoading(false);
     }
@@ -53,24 +80,24 @@ export function Newsletter(props: INewsletterProps) {
             </Flex>
             <NewsletterForm id="newsletter-form" onSubmit={onSubmit}>
               <Flex column>
-                <FormItem id="nickname">
-                  <Input colorType="primary" name="nickname" placeholder="nickname" skewed />
+                <FormItem id="name">
+                  <Input colorType="primary" name="name" placeholder="nickname" skewed />
                   <ErrorMessage>
-                    <ValidationError prefix="nickname" field="nickname" errors={state.errors} />
+                    <ValidationError prefix="name" field="name" errors={errors} />
                   </ErrorMessage>
                 </FormItem>
 
                 <FormItem id="email">
                   <Input type="email" colorType="primary" name="email" placeholder="e-mail" skewed />
                   <ErrorMessage>
-                    <ValidationError prefix="email" field="email" errors={state.errors} />
+                    <ValidationError prefix="email" field="email" errors={errors} />
                   </ErrorMessage>
                 </FormItem>
 
                 <FormItem id="message">
                   <TextArea colorType="primary" name="message" placeholder="message" skewed rows={8} />
                   <ErrorMessage>
-                    <ValidationError prefix="Message" field="message" errors={state.errors} />
+                    <ValidationError prefix="Message" field="message" errors={errors} />
                   </ErrorMessage>
                 </FormItem>
 

@@ -9,7 +9,7 @@ export function TextArea(props: IInputProps) {
   return (
     <InputContainerStyle>
       <label htmlFor={props.id}>{props.label}</label>
-      <InputStyle {...props}>
+      <InputStyle {...props} name={`textarea-${props.name}`}>
         <textarea placeholder={props.placeholder} name={props.name} id={props.id} />
       </InputStyle>
     </InputContainerStyle>
