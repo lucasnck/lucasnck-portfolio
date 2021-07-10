@@ -6,7 +6,7 @@ import { Flex } from "../flex";
 import { Section } from "../section";
 import { Slider } from "../slider";
 import { Text } from "../text";
-import { DescriptionContainer, HeaderContainer, Icon, Item, ProjectsStyle, SelectedProject } from "./style";
+import { DescriptionContainer, Icon, Item, ProjectsStyle, SelectedProject } from "./style";
 
 export interface ISkillsProps {}
 
@@ -349,6 +349,7 @@ export function Projects(props: ISkillsProps) {
                   as="a"
                   href={selectedProject.url}
                   target="_blank"
+                  rel="noreferrer"
                   type="primary"
                   skewed
                   outlined

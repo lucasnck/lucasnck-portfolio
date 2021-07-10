@@ -32,13 +32,16 @@ export function Footer(props: IFooterProps) {
               />
             </svg>
             <span style={{ marginLeft: "1rem" }}>
-              © 2021 developed by <a href="/#">lucasnck</a>
+              © 2021 developed by{" "}
+              <a href="https://linkedin.com/in/lucasnck" target="_blank" rel="noreferrer">
+                lucasnck
+              </a>
             </span>
           </Flex>
           <Flex centeredX endXMd>
             <span>
               follow on{" "}
-              <a href="instagram.com/lucasnck" target="_blank">
+              <a href="https://github.com/lucasnck" target="_blank" rel="noreferrer">
                 github
               </a>
             </span>

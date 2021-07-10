@@ -41,22 +41,31 @@ export default function Menu(props: IMenuProps) {
         <SocialMedia>
           <ul>
             <li>
-              <a href="/">
-                <FontAwesomeIcon icon={["fab", "instagram"]} />
-              </a>
-            </li>
-            <li>
-              <a href="#about">
+              <a href="https://github.com/lucasnck" target="_blank" rel="noreferrer">
                 <FontAwesomeIcon icon={["fab", "github"]} />
               </a>
             </li>
             <li>
-              <a href="#about">
+              <a href="https://linkedin.com/in/lucasnck" target="_blank" rel="noreferrer">
                 <FontAwesomeIcon icon={["fab", "linkedin"]} />
               </a>
             </li>
             <li>
-              <a href="#about">
+              <a
+                href="https://open.spotify.com/user/wh15y5gilc2rzany6blje0649?si=ca25a9380d624d79"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon icon={["fab", "spotify"]} />
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com/lucasnck" target="_blank" rel="noreferrer">
+                <FontAwesomeIcon icon={["fab", "instagram"]} />
+              </a>
+            </li>
+            <li>
+              <a href="https://facebook.com/luscanck" target="_blank" rel="noreferrer">
                 <FontAwesomeIcon icon={["fab", "facebook"]} />
               </a>
             </li>
