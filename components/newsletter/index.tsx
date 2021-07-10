@@ -132,10 +132,10 @@ export function Newsletter(props: INewsletterProps) {
       </NewsletterStyle>
       <Modal show={modal.show} toggle={modal.toggle}>
         <Text as="h3" type="light">
-          Obrigado pela sua mensagem!
+          Thanks for your message!
         </Text>
         <Text as="p" type="light">
-          Assim que for possível eu entrarei em contato com você.
+          As soon as possible I will answer you.
         </Text>
       </Modal>
     </section>

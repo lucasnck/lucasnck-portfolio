@@ -1,23 +1,15 @@
-import styled from "styled-components";
-import is from "styled-is";
+import * as React from "react";
+import { BadgeStyle } from "./style";
 
-export const Babel = styled.span`
-  display: inline-block;
-  line-height: 15px;
-  padding: 0 0.3rem;
-  font-size: 10px;
-  color: ${(props) => props.theme.colors.light};
-  background-color: ${(props) => props.theme.colors[props.type]};
-  ${is("outlined")`
-    background-color: transparent;
-    color: ${(props) => props.theme.colors[props.type]};
-    border: 1px solid ${(props) => props.theme.colors[props.type]};
-  `}
-  border: 1px solid ${(props) => props.theme.colors[props.type]};
-  /* border-radius: 4px; */
-  transform: skew(${(props) => props.theme.skew.md});
-  > * {
-    display: block;
-    transform: skew(-${(props) => props.theme.skew.md});
-  }
-`;
+export interface IBadge {
+  type: string;
+  outlined?: boolean;
+}
+
+export const Badge: React.FC<IBadge> = (props) => {
+  return (
+    <BadgeStyle {...props}>
+      <span>{props.children}</span>
+    </BadgeStyle>
+  );
+};

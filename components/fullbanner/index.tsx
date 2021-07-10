@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useContext } from "react";
-import { Babel } from "../babel";
+import { Badge } from "../babel";
 import { Container } from "../container";
 import { Flex } from "../flex";
 import { CustomCursorContext } from "../magic-cursor";
@@ -40,44 +40,44 @@ export function FullBanner(props: IFullBannerProps) {
             </p>
             <TagList>
               <li>
-                <Babel type="secondary">
+                <Badge type="secondary">
                   <span>JavaScript</span>
-                </Babel>
+                </Badge>
               </li>
               <li>
-                <Babel type="secondary">
+                <Badge type="secondary">
                   <span>TypeScript</span>
-                </Babel>
+                </Badge>
               </li>
               <li>
-                <Babel type="secondary">
+                <Badge type="secondary">
                   <span>React</span>
-                </Babel>
+                </Badge>
               </li>
               <li>
-                <Babel type="secondary">
+                <Badge type="secondary">
                   <span>NodeJS</span>
-                </Babel>
+                </Badge>
               </li>
               <li>
-                <Babel type="secondary">
+                <Badge type="secondary">
                   <span>Angular</span>
-                </Babel>
+                </Badge>
               </li>
               <li>
-                <Babel type="secondary">
+                <Badge type="secondary">
                   <span>Java</span>
-                </Babel>
+                </Badge>
               </li>
               <li>
-                <Babel type="secondary">
+                <Badge type="secondary">
                   <span>AWS</span>
-                </Babel>
+                </Badge>
               </li>
               <li>
-                <Babel type="secondary">
+                <Badge type="secondary">
                   <span>Azure DevOps</span>
-                </Babel>
+                </Badge>
               </li>
             </TagList>
           </FullBannerDescription>
