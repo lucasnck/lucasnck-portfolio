@@ -4,11 +4,11 @@ export const FullBannerStyle = styled.div`
   width: 100%;
   display: flex;
   align-items: start;
-  padding-top: 100px;
-  @media (min-width: ${(props) => props.theme.screen.md}) {
+  padding-top: 8rem;
+  @media (min-width: ${(props) => props.theme.screen.lg}) {
     min-height: 100vh;
     align-items: center;
-    padding-top: 0;
+    padding-top: 3rem;
   }
   margin-bottom: 5rem;
 `;
@@ -38,8 +38,16 @@ export const Avatar = styled.div`
     transform: skew(${(props) => props.theme.skew.sm});
   }
   @media (min-width: ${(props) => props.theme.screen.md}) {
-    margin-bottom: 0;
     transform: skew(${(props) => props.theme.skew.md});
+  }
+  @media (min-width: ${(props) => props.theme.screen.lg}) {
+    transform: skew(${(props) => props.theme.skew.lg});
+  }
+  @media (min-width: ${(props) => props.theme.screen.xl}) {
+    transform: skew(${(props) => props.theme.skew.xl});
+  }
+  @media (min-width: ${(props) => props.theme.screen.md}) {
+    margin-bottom: 0;
     height: 160px;
     flex-basis: 160px;
   }
@@ -50,6 +58,12 @@ export const Avatar = styled.div`
     }
     @media (min-width: ${(props) => props.theme.screen.md}) {
       transform: skew(-${(props) => props.theme.skew.md});
+    }
+    @media (min-width: ${(props) => props.theme.screen.lg}) {
+      transform: skew(-${(props) => props.theme.skew.lg});
+    }
+    @media (min-width: ${(props) => props.theme.screen.xl}) {
+      transform: skew(-${(props) => props.theme.skew.xl});
     }
   }
   img {

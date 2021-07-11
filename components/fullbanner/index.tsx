@@ -16,7 +16,7 @@ export function FullBanner(props: IFullBannerProps) {
       <Container>
         <Flex centeredY columnMd>
           <Avatar>
-            <img alt="brain" src="/images/me.jpg" width={220} height={220} />
+            <img alt="brain" src="/images/frontend-lucasnck.jpg" width={220} height={220} />
           </Avatar>
           <FullBannerDescription onMouseEnter={() => setType("hamburger")} onMouseLeave={() => setType("default")}>
             <Flex center style={{ flexWrap: "wrap" }}>
