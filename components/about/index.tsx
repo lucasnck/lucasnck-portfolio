@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Button } from "../button";
 import { Container } from "../container";
 import { Mark } from "../mark";
 import { Section } from "../section";
@@ -28,11 +27,6 @@ export function About(props: IAboutProps) {
                 developer and since then I've built a career in the area, working mostly with{" "}
                 <Mark type="secondary">e-commerce</Mark>, but currently applying my knowledge in the financial area.
               </p>
-              <div>
-                <Button type="primary" outlined skewed>
-                  <span>download cv</span>
-                </Button>
-              </div>
             </div>
           </div>
         </Container>
