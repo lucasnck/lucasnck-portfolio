@@ -23,13 +23,14 @@ export function FullBanner(props: IFullBannerProps) {
               <h1>Lucas Ribeiro - Frontend developer</h1>
               <Flex className="facebook-like" style={{ flex: "1" }}>
                 <iframe
-                  title="facebook-like"
-                  src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Flucasnck.github.io%2F&width=200&layout=button_count&action=like&show_faces=true&share=false&height=65&appId"
-                  width="150"
-                  height="20"
+                  src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Flucasnck.com%2F&width=90px&layout=button_count&action=like&size=small&share=false&height=21&appId"
+                  width="90px"
+                  height="21"
+                  style={{ border: "none", overflow: "hidden" }}
                   scrolling="no"
-                  style={{ border: "none" }}
-                />
+                  frameBorder="0"
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                ></iframe>
               </Flex>
             </Flex>
             <p>
