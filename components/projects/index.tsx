@@ -56,7 +56,7 @@ const projects = [
   {
     id: "appbtgmaisbusiness",
     logo: "/images/btgmaisbusiness.svg",
-    url: "https://app.btgmaisbusiness.com.br",
+    url: "https://app.btgmaisbusiness.com",
     background: "linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)",
     title: (
       <>
@@ -77,7 +77,7 @@ const projects = [
   {
     id: "precatoriosbrasil",
     logo: "/images/precatoriosbrasil.svg",
-    url: "https://app.precatoriosbrasil.com.br",
+    url: "https://app.precatoriosbrasil.com/",
     background: "linear-gradient(-45deg,#6d1ecd,#4000bf,#00319a,#0081f0)",
     title: (
       <>
