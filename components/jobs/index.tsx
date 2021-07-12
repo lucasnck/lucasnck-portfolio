@@ -187,7 +187,7 @@ export function Jobs(props: IJobsProps) {
                     <span className="year">2015</span>
                   </div>
                   <div>
-                    <h3>Interniship Monitor for C/C++ language</h3>
+                    <h3>Internship Monitor for C/C++ language</h3>
                     <h4>FATEC</h4>
                     <span>Education</span>
                     <p>Monitor of data structure for technology students in programming languages C/C++</p>
@@ -201,7 +201,7 @@ export function Jobs(props: IJobsProps) {
                     <span className="year">2016</span>
                   </div>
                   <div>
-                    <h3>Interniship Front-end Developer</h3>
+                    <h3>Internship Front-end Developer</h3>
                     <h4>TNT Technology</h4>
                     <span>Software Development</span>
                     <p>Software Factory for the development of custom-built IT solutions.</p>

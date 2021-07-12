@@ -368,7 +368,7 @@ export function Projects(props: ISkillsProps) {
           </Flex>
           <div id="projects-list" style={{ marginTop: "4rem" }}>
             <Text as="p" type="text-light">
-              Selectione um projeto:
+              Select project:
             </Text>
             <Slider {...settings}>
               {projects.map((i) => (
