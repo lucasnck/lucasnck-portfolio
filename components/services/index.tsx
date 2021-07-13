@@ -49,7 +49,7 @@ export function Services(props: IServicesProps) {
             </div>
             <Text type="primary" as="h2" align="center" fontSize="32px">
               "Before I got here, <br />
-              it was all bush"
+              it was all wild"
             </Text>
             <Text type="text-light" as="p" align="center" fontSize="18px">
               Looking for developer? Maybe I can help you with my services:
@@ -64,8 +64,8 @@ export function Services(props: IServicesProps) {
                     Development and maintenance specialized in <Mark type="secondary">e-commerce</Mark>, to{" "}
                     <Mark type="secondary">level-up your sales</Mark>. Creating your store from scratch,
                     maintenance/fixes and CMS settings. Also working with SEO markup, performance,{" "}
-                    <Mark type="secondary">A/B testing</Mark>, among others. I also have contact with UI/UX
-                    professionals and designers <Mark type="secondary">to recommend</Mark>.
+                    <Mark type="secondary">A/B testing</Mark>, among others. I'm also in touch with UI/UX professionals
+                    and designers <Mark type="secondary">to recommend</Mark>.
                   </p>
                   <p>
                     Previows experience with platforms: <Mark type="secondary">VTEX</Mark>, Loja Integrada, Woocommerce,
@@ -89,10 +89,10 @@ export function Services(props: IServicesProps) {
                 <div>
                   <h2>Static and Blogs</h2>
                   <p>
-                    Development and maintenance with <Mark type="secondary">high technology</Mark> and efficiency, using
-                    the technologies <Mark type="secondary">NextJS</Mark>, Wordpress, React, TypeScript, among others.
-                    Tags for SEO and adding user behavior tools and integration with CMS, APIs or adding new
-                    functionalities.
+                    Development to create and maintenance with <Mark type="secondary">high technology</Mark> and
+                    efficiency your intitutional <Mark type="secondary">page or blog</Mark>. With the technologies{" "}
+                    <Mark type="secondary">NextJS</Mark>, Wordpress, React, TypeScript, among others. Tags for SEO and
+                    adding user behavior tools and integration with CMS, APIs or adding new functionalities.
                   </p>
                   <p>
                     Technologies: NextJS, Gatsby, React, jQuery, JavaScript, Bootstrap, CSS/CSS3, Styled-Components,{" "}

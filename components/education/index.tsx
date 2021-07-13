@@ -46,10 +46,10 @@ export function Education(props: IEducationProps) {
                       Initiation at USP - SIICUSP - 2016
                     </Text>
                     <p>
-                      This work presents a web artifacts generator that with modeling, forms and drag and drop elements,
-                      facilitates the development of JavaServer Faces (JSF) applications, automating the generator of
-                      major artifacts based on this architecture: ManagedBeans, Data Access Object (DAO), User
-                      Interfaces and JPA Persistence Entities. This tools uses the concepts of Fluent Interface and
+                      This article presents a web artifacts generator that with modeling, forms and drag and drop
+                      elements, facilitates the development of JavaServer Faces (JSF) applications, automating the
+                      generator of major artifacts based on this architecture: ManagedBeans, Data Access Object (DAO),
+                      User Interfaces and JPA Persistence Entities. This tools uses the concepts of Fluent Interface and
                       Abstract Syntax Tree (AST). A autenticidade deste documento pode ser verificada na página da
                       Universidade de São Paulo http://uspdigital.usp.br/webdoc
                       <TagList>
@@ -77,8 +77,8 @@ export function Education(props: IEducationProps) {
                       II Fatec Lins Scientific and Technological Initiation Congress - 2016
                     </Text>
                     <p>
-                      This work presents a web tool to assist in the development (DX) of applications JavaServer Faces
-                      automating the generation of artifacts and projects through modeling of entities and
+                      This articles presents a web tool to assist in the development (DX) of applications JavaServer
+                      Faces automating the generation of artifacts and projects through modeling of entities and
                       relationships, filling out forms and using elements Drag-and-Drop. The artifacts produced are
                       based on the JSF architecture: ManagedBeans, Persistent Entity, Data Access Object (DAO) and User
                       Interfaces and such tool makes use of concepts of Fluent Interfaces and Abstract Syntax Tree
@@ -110,7 +110,7 @@ export function Education(props: IEducationProps) {
                       SIICUSP - 2016
                     </Text>
                     <p>
-                      This work presents a generator of web artifacts that through modeling, forms and drag and drop
+                      This articles presents a generator of web artifacts that through modeling, forms and drag and drop
                       elements, facilitating the development of JavaServer Faces (JSF) applications, automating the
                       generation of the main artifacts of an application based on this architecture: ManagedBeans, Data
                       Access Object (DAO), user interfaces and JPA Persistence Entities. Such tool makes use of Fluent
