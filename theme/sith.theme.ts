@@ -3,7 +3,7 @@ export const theme = {
   fontSizes: [12, 14, 16, 20, 24, 32],
   colors: {
     primary: "#27fcfa",
-    secondary: "#6e25c8",
+    secondary: "#741edd",
     tertiary: "#4514a7",
     dark: "#24212a",
     "text-light": "#9692ad",

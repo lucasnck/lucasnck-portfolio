@@ -98,7 +98,7 @@ export const FullBannerDescription = styled.div`
     color: ${(props) => props.theme.colors.default};
   }
   p {
-    background-color: rgb(36 33 42 / 45%);
+    background-color: rgb(36 33 42 / 85%);
   }
 `;
 
