@@ -9,14 +9,15 @@ export interface IModalProps {
 }
 
 export const Modal: React.FC<IModalProps> = (props) => {
+  const {show, toggle} = props
   return (
     <>
-      <ModalOverlay show={props.show} onClick={props.toggle} />
-      <ModalStyle show={props.show}>
+      <ModalOverlay show={show} onClick={toggle} />
+      <ModalStyle show={show}>
         <div>
           <ModalContent>
             <Flex end>
-              <Button onClick={props.toggle}>
+              <Button onClick={toggle}>
                 <span>X</span>
               </Button>
             </Flex>

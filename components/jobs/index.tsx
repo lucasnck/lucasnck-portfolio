@@ -14,7 +14,7 @@ const settings = {
   arrows: false,
   speed: 500,
   slidesToShow: 5,
-  slidesToScroll: 2,
+  slidesToScroll: 3,
   autoPlay: true,
   centerMode: true,
   centerPadding: "15px 0px 0 0",
@@ -29,7 +29,7 @@ const settings = {
     {
       breakpoint: 992,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,
       },
     },

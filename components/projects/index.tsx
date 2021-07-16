@@ -64,14 +64,14 @@ const projects = [
       </>
     ),
     description: (
-      <>
+      <div>
         Modular platform for customers, administrative/operation and partners. <br />
         <p>
           technologies: JavaScript, React, Vanilla, NextJS, AWS, Azure DevOps, jQuery, Bootstrap, SmartAdmin, Webpack,
           NodeJS, ANTD, Rest APIs, DevExtreme, Git Submodules, Micro-frontend, multirepo, monorepo, npm, yarn, git,
           CSS3/SASS, styled-components, NextJS, CMS, SCRUM.
         </p>
-      </>
+      </div>
     ),
   },
   {
@@ -342,7 +342,7 @@ export function Projects(props: ISkillsProps) {
                 <Text as="h3" type="primary" fontSize="40px" transform="uppercase">
                   {selectedProject.title}
                 </Text>
-                <Text as="p" type="text-light">
+                <Text as="div" type="text-light">
                   {selectedProject.description}
                 </Text>
                 <Button
@@ -386,7 +386,4 @@ export function Projects(props: ISkillsProps) {
       </ProjectsStyle>
     </Section>
   );
-}
-function changed() {
-  throw new Error("Function not implemented.");
 }

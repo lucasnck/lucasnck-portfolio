@@ -17,3 +17,9 @@ export const Content = styled.div`
 		transition: transform 0.2s ease;
   `}
 `;
+
+export const MouseContainer = styled.div`
+  position: relative;
+  width: 100%;
+  height: 100%;
+`;

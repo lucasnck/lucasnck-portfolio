@@ -10,7 +10,7 @@ export function Input(props: IInputProps) {
     <InputContainerStyle>
       <label htmlFor={props.id}>{props.label}</label>
       <InputStyle {...props} name={`input-${props.name}`}>
-        <input placeholder={props.placeholder} name={props.name} id={props.id} />
+        <input placeholder={props.placeholder} name={props.name} id={props.id} value={props.value} />
       </InputStyle>
     </InputContainerStyle>
   );

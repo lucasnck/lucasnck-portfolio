@@ -1,10 +1,14 @@
 import * as React from "react";
 import { FormItemStyle } from "./style";
 
-export interface IFormItemProps {
+export interface IFormItemProps extends React.HTMLAttributes<HTMLDivElement> {
   id: string;
 }
 
 export const FormItem: React.FC<IFormItemProps> = (props) => {
-  return <FormItemStyle>{props.children}</FormItemStyle>;
+  return (
+    <FormItemStyle {...props} id={`form-item-${props.id}`}>
+      {props.children}
+    </FormItemStyle>
+  );
 };

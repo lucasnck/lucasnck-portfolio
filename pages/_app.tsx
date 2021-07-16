@@ -3,11 +3,12 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 import { far } from "@fortawesome/free-regular-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import Head from "next/head";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import { createGlobalStyle, ThemeProvider } from "styled-components";
 import { Wrapper } from "../components/wrapper";
+import { ServerProvider } from "../hooks/server/server";
 import { theme } from "../theme/sith.theme";
 import { Theme } from "../theme/theme.provider";
 
@@ -22,6 +23,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Nunito', sans-serif;
   }
   body {
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' focusable='false' data-prefix='fas' data-icon='mouse-pointer' class='svg-inline--fa fa-mouse-pointer fa-w-10' role='img' width='15' viewBox='0 0 320 512'%3E%3Cpath fill='%2327fffd' stroke='%23000' d='M302.189 329.126H196.105l55.831 135.993c3.889 9.428-.555 19.999-9.444 23.999l-49.165 21.427c-9.165 4-19.443-.571-23.332-9.714l-53.053-129.136-86.664 89.138C18.729 472.71 0 463.554 0 447.977V18.299C0 1.899 19.921-6.096 30.277 5.443l284.412 292.542c11.472 11.179 3.007 31.141-12.5 31.141z'/%3E%3C/svg%3E") 32 32, pointer;
     background-image: url("/images/brain.jpg");
     background-position: 55% -10%;
     background-repeat: no-repeat;
@@ -98,9 +100,11 @@ function MyApp({ Component, pageProps }) {
       <ThemeProvider theme={theme}>
         <Theme>
           <GlobalStyle />
-          <Wrapper>
-            <Component {...pageProps} />
-          </Wrapper>
+          <ServerProvider>
+            <Wrapper>
+              <Component {...pageProps} />
+            </Wrapper>
+          </ServerProvider>
         </Theme>
       </ThemeProvider>
     </>

@@ -52,6 +52,8 @@ export function Education(props: IEducationProps) {
                       User Interfaces and JPA Persistence Entities. This tools uses the concepts of Fluent Interface and
                       Abstract Syntax Tree (AST). A autenticidade deste documento pode ser verificada na página da
                       Universidade de São Paulo http://uspdigital.usp.br/webdoc
+                    </p>
+                    <div>
                       <TagList>
                         <li>
                           <Badge type="secondary">MVC</Badge>
@@ -66,7 +68,7 @@ export function Education(props: IEducationProps) {
                           <Badge type="secondary">Fluent Interface</Badge>
                         </li>
                       </TagList>
-                    </p>
+                    </div>
                   </div>
                 </li>
 
@@ -84,6 +86,8 @@ export function Education(props: IEducationProps) {
                       Interfaces and such tool makes use of concepts of Fluent Interfaces and Abstract Syntax Tree
                       (AST). The artifacts produced can be used in web applications and their operation is satisfactory.
                       Keywords:{" "}
+                    </p>
+                    <div>
                       <TagList>
                         <li>
                           <Badge type="secondary">JAVASERVER FACES</Badge>
@@ -98,7 +102,7 @@ export function Education(props: IEducationProps) {
                           <Badge type="secondary">WEB SYSTEMS</Badge>
                         </li>
                       </TagList>
-                    </p>
+                    </div>
                   </div>
                 </li>
 
@@ -115,6 +119,8 @@ export function Education(props: IEducationProps) {
                       generation of the main artifacts of an application based on this architecture: ManagedBeans, Data
                       Access Object (DAO), user interfaces and JPA Persistence Entities. Such tool makes use of Fluent
                       Interface and Abstract Syntax Tree (AST) concepts.
+                    </p>
+                    <div>
                       <TagList>
                         <li>
                           <Badge type="secondary">JPA</Badge>
@@ -129,7 +135,7 @@ export function Education(props: IEducationProps) {
                           <Badge type="secondary">Web IDE</Badge>
                         </li>
                       </TagList>
-                    </p>
+                    </div>
                   </div>
                 </li>
               </EducationList>
