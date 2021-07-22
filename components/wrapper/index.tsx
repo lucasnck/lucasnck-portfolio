@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import * as React from "react";
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { AddMessage } from "../add-message";
+import { AddMessage } from "../send-message";
 import { Footer } from "../footer";
 import { Header } from "../header";
 import { CustomCursor, CustomCursorManager } from "../magic-cursor";
@@ -18,9 +18,9 @@ export interface IMessagePos {
 }
 
 export const Wrapper: React.FC = ({ children }) => {
-  const [mousePos, setMousePos] = useState<IMessagePos>({ x: 0, y: 0 });
-  const [messagePos, setMessagePos] = useState<IMessagePos>({ x: 0, y: 0 });
-  const [showMessage, setShowMessage] = useState(false);
+  // const [mousePos, setMousePos] = useState<IMessagePos>({ x: 0, y: 0 });
+  // const [messagePos, setMessagePos] = useState<IMessagePos>({ x: 0, y: 0 });
+  // const [showMessage, setShowMessage] = useState(false);
   const router = useRouter();
 
   const [showMenu, setShowMenu] = useState(false);
@@ -36,18 +36,19 @@ export const Wrapper: React.FC = ({ children }) => {
     }
   }, [router.asPath]);
 
-  const createMessage = () => {
-    console.log("create message at pos", mousePos);
-    setMessagePos(mousePos);
-    setShowMessage((state) => true);
-  };
+  // const createMessage = () => {
+  //   console.log("create message at pos", mousePos);
+  //   setMessagePos(mousePos);
+  //   setShowMessage((state) => true);
+  // };
 
-  const mouseEvent = (e) => {
-    setMousePos({
-      x: e.nativeEvent.offsetX,
-      y: e.nativeEvent.offsetY,
-    });
-  };
+  // const mouseEvent = (e) => {
+  //   setMousePos({
+  //     x: e.nativeEvent.offsetX,
+  //     y: e.nativeEvent.offsetY,
+  //   });
+  // };
+
   return (
     <div>
       <MessagesProvider>
@@ -55,14 +56,9 @@ export const Wrapper: React.FC = ({ children }) => {
         {/* <CustomCursor /> */}
         <WrapperContainer show={showMenu}>
           <Menu show={showMenu} toggleMenu={toggleMenu} />
-          <MouseContainer onMouseMove={mouseEvent}>
-            <AddMessage {...messagePos} show={showMessage} setShowMessage={setShowMessage} />
-            <Content
-              show={showMenu}
-              onClick={(e) => {
-                createMessage();
-              }}
-            >
+          <MouseContainer>
+            <AddMessage />
+            <Content show={showMenu}>
               <Messages />
               <MenuOverlay show={showMenu} onClick={toggleMenu} />
               <Header showMenu={showMenu} toggleMenu={toggleMenu} />

@@ -7,13 +7,7 @@ import { Input } from "../input";
 import { Flex } from "../flex";
 import { Button } from "../button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useEffect, useState } from "react";
-import useServer from "../../hooks/server/server";
-
-export interface IAddMessageProps extends IMessagePos {
-  show: boolean;
-  setShowMessage: React.Dispatch<React.SetStateAction<boolean>>;
-}
+import useMessages from "../../hooks/messages/messages";
 
 const AddMessageStyle = styled.div`
   position: absolute;
@@ -51,32 +45,12 @@ const InputStyle = styled(Input)`
   border-right: transparent;
 `;
 
-export function AddMessage(props: IAddMessageProps) {
-  const { socket, state, dispatch } = useServer();
-
-  const { x, y } = props;
-
-  const [form, setForm] = useState({ nickname: "", message: "", hasNickname: false });
-
-  useEffect(() => {
-    console.log("state", state);
-    setForm((prevState) => ({ ...prevState, nickname: state.nickname, hasNickname: !!state.nickname }));
-  }, [state]);
-
-  function sendMessage() {
-    let user = state;
-    user.nickname = form.nickname;
-    localStorage.setItem("user", JSON.stringify(user));
-    dispatch({ type: "save", payload: user });
-    socket.emit("send-message", { ...form, uuid: user.uuid, mousePos: { x, y } });
-    props.setShowMessage(false);
-  }
-
-  const onChange = (input, e) => setForm((state) => ({ ...state, [input]: e.target.value }));
+export function AddMessage() {
+  const { form, showSendMessage, x, y, onChange, sendMessage } = useMessages();
 
   return (
-    <AddMessageStyle show={props.show} style={{ top: y, left: x }}>
-      {props.show && (
+    <AddMessageStyle show={showSendMessage} style={{ top: y, left: x }}>
+      {showSendMessage && (
         <MessageContent>
           <Flex center>
             <div>

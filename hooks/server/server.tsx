@@ -21,24 +21,20 @@ export const ServerProvider: React.FC = (props) => {
         const uuid = data.uuid;
         user = { uuid: uuid };
         localStorage.setItem("user", JSON.stringify(user));
-        socket.emit("signIn", user);
-      } else if (user?.uuid) {
-        socket.emit("signIn", user);
       }
+      socket.emit("signIn", user);
       dispatch({ type: "save", payload: user });
     });
 
-    socket.on("disconnect", (reason) => {
-      console.log("SERVER DISCONECTED", reason);
-      socket.connect();
-    });
+    // socket.on("disconnect", (reason) => {
+    //   console.log("SERVER DISCONECTED", reason);
+    //   socket.connect();
+    // });
 
-    socket.on("connect_error", () => {
-      console.log("error connection");
-      setTimeout(() => {
-        socket.connect();
-      }, 1000);
-    });
+    return () => {
+      socket.emit("disconnect");
+      socket.off();
+    };
   }, []);
 
   return (
