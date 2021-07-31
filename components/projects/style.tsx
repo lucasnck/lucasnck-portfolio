@@ -35,12 +35,21 @@ export const Item = styled.div`
   }
 `;
 
+export const ProjectItem = styled.div`
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+
+  @media (min-width: ${(props) => props.theme.screen.md}) {
+    padding: 0 2rem;
+  }
+`;
+
 export const Icon = styled.div`
   max-width: 120px;
   height: 2rem;
   border-radius: 50%;
   ${isNot("selected")`
-    filter: opacity(0.4) grayscale(1);
+    filter: opacity(0.6) grayscale(0.6);
   `}
   img {
     display: block;
@@ -96,13 +105,11 @@ export const DescriptionContainer = styled.div`
 
 export const SelectedProject = styled.div`
   background-color: #000;
-  width: 10rem;
-  height: 10rem;
-  margin-bottom: 3rem;
+  width: 6rem;
+  height: 6rem;
   @media (min-width: ${(props) => props.theme.screen.md}) {
-    width: 20rem;
-    height: 20rem;
-    padding: 2rem 0 0 0;
+    width: 18rem;
+    height: 18rem;
     margin-bottom: 0;
   }
   border-radius: 50%;
@@ -112,7 +119,7 @@ export const SelectedProject = styled.div`
   position: relative;
   img {
     transform: rotate(-12deg);
-    width: calc(100% + 4rem);
+    width: calc(100% + 1rem);
     position: absolute;
     animation: fadeIn 0.1s ease-in;
     ${is("loading")`

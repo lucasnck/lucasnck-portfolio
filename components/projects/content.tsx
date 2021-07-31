@@ -43,6 +43,23 @@ export const projects = [
     ),
   },
   {
+    id: "lucasnckportfolio",
+    logo: "/images/logo.svg",
+    url: "https://lucasnck.com/",
+    background: "linear-gradient(-45deg,#525252,#525252,#525252,#525252)",
+    title: (
+      <>
+        Portfolio <br /> lucasnck.com
+      </>
+    ),
+    description: (
+      <>
+        technologies: JavaScript, NextJS, React, TypeScript, Styled-Components, Babel, Rest APIs, GTM, Google Analytics,
+        Optimize, HTML5, Mobile First, GIT, SEO, Performance, Vercel.
+      </>
+    ),
+  },
+  {
     id: "b2bbtgmaisbusiness",
     logo: "/images/btgmaisbusiness.svg",
     url: "https://parceiros.precatoriosbrasil.com/",
@@ -84,6 +101,22 @@ export const projects = [
     ),
   },
   {
+    id: "ucode",
+    logo: "/images/ucode-logo.svg",
+    background: "linear-gradient(-45deg,#000,#690828,#000,#1f1c1cc3)",
+    title: (
+      <>
+        Portal <br /> uCode
+      </>
+    ),
+    description: (
+      <>
+        technologies: JavaScript, NextJS, React, TypeScript, Styled-Components, Babel, Rest APIs, GTM, Google Analytics,
+        Optimize, HTML5, Mobile First, GIT, SEO, Performance, Vercel.
+      </>
+    ),
+  },
+  {
     id: "leveros",
     logo: "/images/leveros.svg",
     url: "https://www.leveros.com.br/",
@@ -120,6 +153,7 @@ export const projects = [
   {
     id: "walfanger",
     logo: "/images/walfange.png",
+    background: "linear-gradient(-45deg,#252330,#252330,#252330,#252330)",
     url: "https://www.walfanger.com.br/",
     title: (
       <>
@@ -195,6 +229,17 @@ export const projects = [
         Rest APIs, GTM, Google Analytics, Optimize, HTML5, PHP, GIT, SEO, Performance, Wordpress.
       </>
     ),
+  },
+  {
+    id: "farmup",
+    logo: "/images/farmup.png",
+    background: "linear-gradient(-45deg,#252330,#252330,#252330,#252330)",
+    title: (
+      <>
+        Platform <br /> FarmUP
+      </>
+    ),
+    description: <>technologies: JavaScript, Java, JSF, MVC, Java8, Spring Boot.</>,
   },
   {
     id: "flordecoco",

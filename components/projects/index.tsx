@@ -7,7 +7,7 @@ import { Section } from "../section";
 import { Slider } from "../slider";
 import { Text } from "../text";
 import { projects } from "./content";
-import { DescriptionContainer, Icon, Item, ProjectsStyle, SelectedProject } from "./style";
+import { DescriptionContainer, Icon, Item, ProjectItem, ProjectsStyle, SelectedProject } from "./style";
 
 export interface ISkillsProps {}
 
@@ -27,7 +27,7 @@ export function Projects(props: ISkillsProps) {
     slidesToShow: 8,
     slidesToScroll: 4,
     centerMode: false,
-    centerPadding: "15px 0px 0 0",
+    centerPadding: "0",
     autoPlay: true,
     afterChange: () => setSelectedProject((state) => ({ ...state, updateCount: state.updateCount + 1 })),
     beforeChange: (current, next) => setSelectedProject((state) => ({ ...state, slideIndex: next })),
@@ -72,7 +72,7 @@ export function Projects(props: ISkillsProps) {
     dots: false,
     infinite: true,
     arrows: false,
-    centerPadding: "2rem 2rem",
+    centerPadding: "0",
     responsive: undefined,
   };
 
@@ -103,7 +103,7 @@ export function Projects(props: ISkillsProps) {
             {...settingsShowcase}
           >
             {projects.map((i) => (
-              <div>
+              <ProjectItem>
                 <Flex rowMd center columnReverseXs>
                   <Flex column start>
                     <DescriptionContainer loading={loading}>
@@ -134,7 +134,7 @@ export function Projects(props: ISkillsProps) {
                     </SelectedProject>
                   </Flex>
                 </Flex>
-              </div>
+              </ProjectItem>
             ))}
           </Slider>
 
