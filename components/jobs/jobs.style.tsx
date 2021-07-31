@@ -28,9 +28,6 @@ export const JobItem = styled.div`
     padding-left: 5px;
     padding-right: 20px;
     position: relative;
-    p {
-      font-size: 12px;
-    }
   }
 
   h3 {

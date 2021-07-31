@@ -25,10 +25,10 @@ export const InputStyle = styled.div<IInput>`
     border-radius: 0;
     padding: 0;
     color: ${(props) => props.theme.colors[props.colorType]};
-    font-size: 0.9em;
+    font-size: 1em;
     &::placeholder {
-      font-size: 0.9em;
-      color: ${(props) => props.theme.colors.light};
+      font-size: 1em;
+      color: ${(props) => props.theme.colors["text-light"]};
     }
   }
   input {

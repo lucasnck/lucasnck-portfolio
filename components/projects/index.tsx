@@ -362,7 +362,7 @@ export function Projects(props: ISkillsProps) {
 
             <Flex column center>
               <SelectedProject background={selectedProject.background} loading={loading}>
-                <img src={selectedProject.logo} alt={selectedProject.id} />
+                <img alt={selectedProject.title} src={selectedProject.logo} alt={selectedProject.id} />
               </SelectedProject>
             </Flex>
           </Flex>

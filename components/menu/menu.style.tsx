@@ -70,7 +70,6 @@ export const SocialMedia = styled.div`
       display: block;
       width: 25px;
       height: 25px;
-      font-size: 12px;
       color: #462a68;
       svg {
         font-size: 22px;

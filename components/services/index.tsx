@@ -45,7 +45,7 @@ export function Services(props: IServicesProps) {
         <Container>
           <Flex column centeredY style={{ marginBottom: "1rem" }}>
             <div>
-              <img alt="serices" src="/images/florest-pc.png" width={150} height={150} />
+              <img alt="front-end services" src="/images/florest-pc.png" width={150} height={150} />
             </div>
             <Text type="primary" as="h2" align="center" fontSize="32px">
               "Before I got here, <br />

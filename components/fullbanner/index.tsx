@@ -16,7 +16,7 @@ export function FullBanner(props: IFullBannerProps) {
       <Container>
         <Flex centeredY columnMd>
           <Avatar>
-            <img alt="brain" src="/images/frontend-lucasnck.jpg" width={220} height={220} />
+            <img alt="lucasnck frontend developer" src="/images/frontend-lucasnck.jpg" width={220} height={220} />
           </Avatar>
           <FullBannerDescription onMouseEnter={() => setType("hamburger")} onMouseLeave={() => setType("default")}>
             <Flex center style={{ flexWrap: "wrap" }}>
@@ -36,7 +36,7 @@ export function FullBanner(props: IFullBannerProps) {
             </Flex>
             <p>
               My name is Lucas Ribeiro, I'm {new Date().getFullYear() - 1992} years old, single, Brazilian and currently
-              I live in Alto de Pinheiros in São Paulo. I am passionate about technology and programming, I have{" "}
+              I live in Alto de Pinheiros in São Paulo. I am passionate about technology and programming,{" "}
               {new Date().getFullYear() - 2016} year career as a JavaScript developer. I believe that a good developer,
               in addition to technology knowledge, must be interest in the business world.
             </p>

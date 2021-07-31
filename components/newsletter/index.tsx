@@ -82,7 +82,7 @@ export function Newsletter(props: INewsletterProps) {
               <Text as="h2" type="primary">
                 Let's make networking? - Send me a message.
               </Text>
-              <Text as="p" type="light">
+              <Text as="p" type="light" fontSize="1.2rem">
                 We can talk about technology, job proposals, freelance jobs, projects development, or just networking.
                 I'm also <Mark type="secondary">looking</Mark> for developers to{" "}
                 <Mark type="secondary">work with me</Mark> in my current job. But I can also refer you to other jobs if

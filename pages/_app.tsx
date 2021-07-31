@@ -56,7 +56,7 @@ function MyApp({ Component, pageProps }) {
         <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet" />
 
         <title>Lucas Ribeiro - Frontend Developer</title>
-        <link rel="icon" sizes="16x16" href="/fav.png" />
+        <link rel="icon" sizes="16x16" href="/fav.ico" />
         <meta name="theme-color" content="#4514a7" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta

@@ -2,6 +2,7 @@ import * as React from "react";
 import { Container } from "../container";
 import { Flex } from "../flex";
 import { FooterStyle } from "./footer.style";
+import { Text } from "../text";
 
 export interface IFooterProps {}
 
@@ -31,20 +32,20 @@ export function Footer(props: IFooterProps) {
                 strokeWidth="2"
               />
             </svg>
-            <span style={{ marginLeft: "1rem" }}>
+            <Text as="span" type="light" style={{ marginLeft: "1rem" }}>
               © 2021 developed by{" "}
-              <a href="https://linkedin.com/in/lucasnck" target="_blank" rel="noreferrer">
+              <Text as="a" type="light" href="https://linkedin.com/in/lucasnck" target="_blank" rel="noreferrer">
                 lucasnck
-              </a>
-            </span>
+              </Text>
+            </Text>
           </Flex>
           <Flex centeredX endXMd>
-            <span>
+            <Text as="span" type="light">
               follow on{" "}
-              <a href="https://github.com/lucasnck" target="_blank" rel="noreferrer">
+              <Text as="a" type="light" href="https://github.com/lucasnck" target="_blank" rel="noreferrer">
                 github
-              </a>
-            </span>
+              </Text>
+            </Text>
           </Flex>
         </Flex>
       </Container>
