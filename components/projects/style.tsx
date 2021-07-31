@@ -102,6 +102,7 @@ export const SelectedProject = styled.div`
   @media (min-width: ${(props) => props.theme.screen.md}) {
     width: 20rem;
     height: 20rem;
+    padding: 2rem 0 0 0;
     margin-bottom: 0;
   }
   border-radius: 50%;
@@ -116,7 +117,7 @@ export const SelectedProject = styled.div`
     animation: fadeIn 0.1s ease-in;
     ${is("loading")`
       -webkit-animation-name: fadeOut;
-      -webkit-animation-duration: 0.4s;
+      -webkit-animation-duration: 0.8s;
       -webkit-animation-iteration-count: 1;
       -webkit-animation-timing-function: ease;
     `}
