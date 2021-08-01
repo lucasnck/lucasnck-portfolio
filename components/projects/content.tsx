@@ -151,6 +151,17 @@ export const projects = [
     ),
   },
   {
+    id: "womand",
+    logo: "/images/womand.svg",
+    background: "linear-gradient(-45deg,#b90f81,#66092d,#a82165,#660d41)",
+    title: (
+      <>
+        E-commerce <br /> Womand
+      </>
+    ),
+    description: <>technologies: TypeScript, Boostrap, SCSS/SASS, JavaScript, Loja Integrada</>,
+  },
+  {
     id: "walfanger",
     logo: "/images/walfange.png",
     background: "linear-gradient(-45deg,#252330,#252330,#252330,#252330)",
