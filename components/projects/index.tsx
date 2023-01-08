@@ -93,7 +93,7 @@ export function Projects(props: ISkillsProps) {
               Projects ({projects.length}++)
             </Text>
             <Text type="text-light" as="p" align="center" fontSize="18px">
-              Not all but some projects I've worked on. Some projects may be different from when I worked with them.
+              Not all but some projects I've worked on. Some projects may be different from when I worked on them.
             </Text>
           </Flex>
           <Slider
